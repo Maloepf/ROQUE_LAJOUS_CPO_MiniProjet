@@ -1,13 +1,11 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+    Mini-Projet : Speed-Click
+    ROQUE Daphné & LAJOUS Malô
+    Décembre 2021
+
+*/
 package speed.click;
 
-/**
- *
- * @author malol
- */
 public class SpeedClick {
 
     /**
