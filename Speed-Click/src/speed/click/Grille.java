@@ -10,7 +10,7 @@ package speed.click;
 public class Grille {
     Cellule [][] CellulesJeu;
     
-    public void Grille(int t){
+    public Grille(int t){
         CellulesJeu=new Cellule[t][t];
         for (int l = 0 ; l<t ; l++){
             for(int c=0 ; c<t ; c++){

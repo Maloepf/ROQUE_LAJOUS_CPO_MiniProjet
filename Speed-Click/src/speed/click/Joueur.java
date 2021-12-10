@@ -9,12 +9,12 @@ package speed.click;
  * @author daphn
  */
 public class Joueur {
-    int Score;
-    String Name;    
+    int score;
+    String name;    
     
     
     public Joueur(String player){
-        Name = player;
+        name = player;
 }
 }
     
