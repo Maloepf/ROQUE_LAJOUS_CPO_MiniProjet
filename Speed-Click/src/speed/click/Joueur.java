@@ -10,4 +10,6 @@ package speed.click;
  */
 public class Joueur {
     
+   
+    
 }
