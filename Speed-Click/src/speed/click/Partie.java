@@ -20,7 +20,7 @@ public class Partie {
         grilleJeu = new Grille(2);
         joueurCourant.score=s;
         timer=temps;
-        celluleActive.allumerCellule(new Random().nextInt(2),new Random().nextInt(2));
+        grilleJeu.allumerCellule(new Random().nextInt(2),new Random().nextInt(2));
         
         
         
