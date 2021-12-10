@@ -6,10 +6,7 @@
 */
 package speed.click;
 
-/**
- *
- * @author malol
- */
+
 public class Partie {
     
 }
