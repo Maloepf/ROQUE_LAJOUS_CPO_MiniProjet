@@ -21,8 +21,5 @@ public class Partie {
         joueurCourant.score=s;
         timer=temps;
         grilleJeu.allumerCellule(new Random().nextInt(2),new Random().nextInt(2));
-        
-        
-        
     }
 }
