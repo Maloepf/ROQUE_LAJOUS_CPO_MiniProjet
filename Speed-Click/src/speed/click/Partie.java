@@ -14,13 +14,20 @@ public class Partie {
     Grille grilleJeu;
     Joueur joueurCourant;
     double timer;
-    Cellule celluleActive;
+
+    
+    
+    public Partie(Joueur j){
+        joueurCourant=j;
+    }
+   
     
     public void initialiserPartie(int s,double temps){
         grilleJeu = new Grille(2);
         joueurCourant.score=s;
         timer=temps;
-        grilleJeu.allumerCellule(new Random().nextInt(2),new Random().nextInt(2));
+        eteindreGrille();
+        allumerCelluleAleat();
     }
     
    public void eteindreGrille(){
@@ -30,6 +37,11 @@ public class Partie {
            }
        }
    }
+   
+   public void allumerCelluleAleat() {
+    grilleJeu.allumerCellule(new Random().nextInt(2),new Random().nextInt(2));
+}
+
    
    
 }
