@@ -22,4 +22,14 @@ public class Partie {
         timer=temps;
         grilleJeu.allumerCellule(new Random().nextInt(2),new Random().nextInt(2));
     }
+    
+   public void eteindreGrille(){
+       for (int i = 0 ; i<2 ; i++){
+           for (int j = 0 ; j<2 ; j++){
+               grilleJeu.eteindreCellule(j, j);
+           }
+       }
+   }
+   
+   
 }
