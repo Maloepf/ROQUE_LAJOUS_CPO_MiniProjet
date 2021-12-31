@@ -18,7 +18,7 @@ public class Interfacedemarrage extends javax.swing.JFrame {
     public Interfacedemarrage() {
         initComponents();
     }
-    FenetreDeJeu fenetreJeu2x2_classique = new FenetreDeJeu();
+    FenetreDeJeu fenetreJeu2x2_infini = new FenetreDeJeu();
     
     
     
@@ -171,8 +171,8 @@ public class Interfacedemarrage extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_100x100_infiniActionPerformed
 
     private void btn_2x2_classique1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2x2_classique1ActionPerformed
-        fenetreJeu2x2_classique.setVisible(true);
-        fenetreJeu2x2_classique.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        fenetreJeu2x2_infini.setVisible(true);
+        fenetreJeu2x2_infini.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_btn_2x2_classique1ActionPerformed
 
     private void btn_4x4_classiqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_4x4_classiqueActionPerformed

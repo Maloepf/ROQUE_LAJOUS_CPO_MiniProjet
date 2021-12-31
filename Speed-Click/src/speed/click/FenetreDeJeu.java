@@ -6,8 +6,12 @@
 */
 package speed.click;
 
+import java.util.Random;
+
 public class FenetreDeJeu extends javax.swing.JFrame {
 
+    Cellule [][] CellulesJeu;
+    Grille grilleJeu;
 
     public FenetreDeJeu() {
         initComponents();
@@ -148,7 +152,9 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     }//GEN-LAST:event_mode1ActionPerformed
 
     private void cellule11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11ActionPerformed
-        // TODO add your handling code here:
+    allumerCelluleAleat() ;
+    
+    
     }//GEN-LAST:event_cellule11ActionPerformed
 
     private void cellule21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule21ActionPerformed
@@ -187,6 +193,40 @@ public class FenetreDeJeu extends javax.swing.JFrame {
             }
         });
     }
+    
+    
+        public void Grille(int t){
+        CellulesJeu=new Cellule[t][t];
+        for (int l = 0 ; l<t ; l++){
+            for(int c=0 ; c<t ; c++){
+                CellulesJeu[l][c]= new Cellule();
+            }
+        }
+    }
+        
+         public void eteindreCellule (int x, int y){
+    CellulesJeu[x][y].eteindre();
+    }
+    
+    
+    
+    
+    public void allumerCellule (int x, int y){
+        CellulesJeu[x][y].allumer();
+    }
+    
+    
+    
+    public void allumerCelluleAleat() {
+    grilleJeu.allumerCellule(new Random().nextInt(2),new Random().nextInt(2)); //trouver comment résoudre le probmème
+}
+
+   
+
+
+
+    
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton START;
