@@ -26,21 +26,169 @@ public class Interfacedemarrage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        btn_16x16_infini = new javax.swing.JPanel();
+        entrezpeudo = new javax.swing.JTextField();
+        jScrollBar1 = new javax.swing.JScrollBar();
+        pseudo = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        partie = new javax.swing.JLabel();
+        partie2x2 = new javax.swing.JLabel();
+        partie4X4 = new javax.swing.JLabel();
+        partie16x16 = new javax.swing.JLabel();
+        partie100x100 = new javax.swing.JLabel();
+        btn_2x2_infini = new javax.swing.JButton();
+        btn_100x100_infini = new javax.swing.JButton();
+        btn_2x2_classique1 = new javax.swing.JButton();
+        btn_4x4_classique = new javax.swing.JButton();
+        btn_4x4_infini = new javax.swing.JButton();
+        btn_16x16_classique = new javax.swing.JButton();
+        btn_2x2_classique5 = new javax.swing.JButton();
+        btn_2x2_btn_100x100_classique = new javax.swing.JButton();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setName("panel demarrage"); // NOI18N
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btn_16x16_infini.setBackground(new java.awt.Color(255, 255, 204));
+        btn_16x16_infini.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        entrezpeudo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                entrezpeudoActionPerformed(evt);
+            }
+        });
+        btn_16x16_infini.add(entrezpeudo, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 90, 240, 40));
+        btn_16x16_infini.add(jScrollBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 90, -1, 40));
+
+        pseudo.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        pseudo.setText(" Entrez votre PSEUDO : ");
+        btn_16x16_infini.add(pseudo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 300, 100));
+        btn_16x16_infini.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 990, 10));
+
+        partie.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        partie.setText("MODE Partie :");
+        btn_16x16_infini.add(partie, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 190, 50));
+
+        partie2x2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        partie2x2.setText("2x2");
+        btn_16x16_infini.add(partie2x2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 230, 60, 40));
+
+        partie4X4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        partie4X4.setText("4X4");
+        btn_16x16_infini.add(partie4X4, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 230, -1, 40));
+
+        partie16x16.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        partie16x16.setText("16x16");
+        btn_16x16_infini.add(partie16x16, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 230, 80, 30));
+
+        partie100x100.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        partie100x100.setText("100x100");
+        btn_16x16_infini.add(partie100x100, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 230, 130, 40));
+
+        btn_2x2_infini.setText("infini");
+        btn_2x2_infini.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_2x2_infiniActionPerformed(evt);
+            }
+        });
+        btn_16x16_infini.add(btn_2x2_infini, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 390, 110, 40));
+
+        btn_100x100_infini.setText("infini");
+        btn_100x100_infini.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_100x100_infiniActionPerformed(evt);
+            }
+        });
+        btn_16x16_infini.add(btn_100x100_infini, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 390, 110, 40));
+
+        btn_2x2_classique1.setText("classique");
+        btn_2x2_classique1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_2x2_classique1ActionPerformed(evt);
+            }
+        });
+        btn_16x16_infini.add(btn_2x2_classique1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 300, 110, 40));
+
+        btn_4x4_classique.setText("classique");
+        btn_4x4_classique.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_4x4_classiqueActionPerformed(evt);
+            }
+        });
+        btn_16x16_infini.add(btn_4x4_classique, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 300, 110, 40));
+
+        btn_4x4_infini.setText("infini");
+        btn_4x4_infini.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_4x4_infiniActionPerformed(evt);
+            }
+        });
+        btn_16x16_infini.add(btn_4x4_infini, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 390, 110, 40));
+
+        btn_16x16_classique.setText("classique");
+        btn_16x16_classique.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_16x16_classiqueActionPerformed(evt);
+            }
+        });
+        btn_16x16_infini.add(btn_16x16_classique, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 300, 110, 40));
+
+        btn_2x2_classique5.setText("infini");
+        btn_2x2_classique5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_2x2_classique5ActionPerformed(evt);
+            }
+        });
+        btn_16x16_infini.add(btn_2x2_classique5, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 390, 110, 40));
+
+        btn_2x2_btn_100x100_classique.setText("classique");
+        btn_2x2_btn_100x100_classique.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_2x2_btn_100x100_classiqueActionPerformed(evt);
+            }
+        });
+        btn_16x16_infini.add(btn_2x2_btn_100x100_classique, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 300, 110, 40));
+
+        getContentPane().add(btn_16x16_infini, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 1040, 580));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void entrezpeudoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entrezpeudoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_entrezpeudoActionPerformed
+
+    private void btn_2x2_infiniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2x2_infiniActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_2x2_infiniActionPerformed
+
+    private void btn_100x100_infiniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_100x100_infiniActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_100x100_infiniActionPerformed
+
+    private void btn_2x2_classique1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2x2_classique1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_2x2_classique1ActionPerformed
+
+    private void btn_4x4_classiqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_4x4_classiqueActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_4x4_classiqueActionPerformed
+
+    private void btn_4x4_infiniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_4x4_infiniActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_4x4_infiniActionPerformed
+
+    private void btn_16x16_classiqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_16x16_classiqueActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_16x16_classiqueActionPerformed
+
+    private void btn_2x2_classique5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2x2_classique5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_2x2_classique5ActionPerformed
+
+    private void btn_2x2_btn_100x100_classiqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2x2_btn_100x100_classiqueActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_2x2_btn_100x100_classiqueActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +226,23 @@ public class Interfacedemarrage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_100x100_infini;
+    private javax.swing.JButton btn_16x16_classique;
+    private javax.swing.JPanel btn_16x16_infini;
+    private javax.swing.JButton btn_2x2_btn_100x100_classique;
+    private javax.swing.JButton btn_2x2_classique1;
+    private javax.swing.JButton btn_2x2_classique5;
+    private javax.swing.JButton btn_2x2_infini;
+    private javax.swing.JButton btn_4x4_classique;
+    private javax.swing.JButton btn_4x4_infini;
+    private javax.swing.JTextField entrezpeudo;
+    private javax.swing.JScrollBar jScrollBar1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JLabel partie;
+    private javax.swing.JLabel partie100x100;
+    private javax.swing.JLabel partie16x16;
+    private javax.swing.JLabel partie2x2;
+    private javax.swing.JLabel partie4X4;
+    private javax.swing.JLabel pseudo;
     // End of variables declaration//GEN-END:variables
 }
