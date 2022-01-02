@@ -6,6 +6,7 @@
 */
 package speed.click;
 
+import java.awt.Color;
 import java.util.Random;
 
 public class FenetreDeJeu extends javax.swing.JFrame {
@@ -201,8 +202,18 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     }
     
     public void allumerCelluleAleat() {
-    grilleJeu.allumerCellule(new Random().nextInt(2),new Random().nextInt(2)); //trouver comment résoudre le probmème
-}
+    grilleJeu.allumerCellule(new Random().nextInt(2),new Random().nextInt(2)); 
+    }
+    
+    public void allumerCelluleAleat_graph(){
+        for (int l =0; l<2; l++){
+            for (int c = 0; c<2; c++){
+                if (CellulesJeu[c][l].EstAllumer){ //Faire la méthode de la condition si la cellule est allumer et l'afficher
+                    
+                }
+            }
+        }
+    }
 
    
 
