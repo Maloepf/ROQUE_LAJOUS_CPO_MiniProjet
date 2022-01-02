@@ -11,17 +11,23 @@ import java.util.Random;
 public class FenetreDeJeu extends javax.swing.JFrame {
 
     Cellule [][] CellulesJeu;
+    Grille grilleJeu;
+    Joueur joueurCourant;
+    double timer;
+    
+
     
 
     public FenetreDeJeu() {
         initComponents();
+        grilleJeu= new Grille(2);
     }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        grilleJeu = new javax.swing.JPanel();
+        grilleJeu_graphique = new javax.swing.JPanel();
         cellule11 = new javax.swing.JButton();
         cellule12 = new javax.swing.JButton();
         cellule21 = new javax.swing.JButton();
@@ -46,27 +52,27 @@ public class FenetreDeJeu extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        grilleJeu.setBackground(new java.awt.Color(204, 255, 255));
-        grilleJeu.setPreferredSize(new java.awt.Dimension(520, 520));
-        grilleJeu.setLayout(new java.awt.GridLayout(2, 2));
+        grilleJeu_graphique.setBackground(new java.awt.Color(204, 255, 255));
+        grilleJeu_graphique.setPreferredSize(new java.awt.Dimension(520, 520));
+        grilleJeu_graphique.setLayout(new java.awt.GridLayout(2, 2));
 
         cellule11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cellule11ActionPerformed(evt);
             }
         });
-        grilleJeu.add(cellule11);
-        grilleJeu.add(cellule12);
+        grilleJeu_graphique.add(cellule11);
+        grilleJeu_graphique.add(cellule12);
 
         cellule21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cellule21ActionPerformed(evt);
             }
         });
-        grilleJeu.add(cellule21);
-        grilleJeu.add(cellule22);
+        grilleJeu_graphique.add(cellule21);
+        grilleJeu_graphique.add(cellule22);
 
-        getContentPane().add(grilleJeu, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 600, 600));
+        getContentPane().add(grilleJeu_graphique, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 600, 600));
 
         chronometre.setBackground(new java.awt.Color(255, 255, 204));
         chronometre.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -194,29 +200,6 @@ public class FenetreDeJeu extends javax.swing.JFrame {
         });
     }
     
-    
-        public void Grille(int t){
-        CellulesJeu=new Cellule[t][t];
-        for (int l = 0 ; l<t ; l++){
-            for(int c=0 ; c<t ; c++){
-                CellulesJeu[l][c]= new Cellule();
-            }
-        }
-    }
-        
-         public void eteindreCellule (int x, int y){
-    CellulesJeu[x][y].eteindre();
-    }
-    
-    
-    
-    
-    public void allumerCellule (int x, int y){
-        CellulesJeu[x][y].allumer();
-    }
-    
-    
-    
     public void allumerCelluleAleat() {
     grilleJeu.allumerCellule(new Random().nextInt(2),new Random().nextInt(2)); //trouver comment résoudre le probmème
 }
@@ -236,7 +219,7 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     private javax.swing.JButton cellule22;
     private javax.swing.JPanel chronometre;
     private javax.swing.JPanel chronometre1;
-    private javax.swing.JPanel grilleJeu;
+    private javax.swing.JPanel grilleJeu_graphique;
     private javax.swing.JPanel infosjoueur;
     private javax.swing.JPanel infospartie;
     private javax.swing.JLabel jLabel1;

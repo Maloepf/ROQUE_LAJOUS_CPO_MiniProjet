@@ -20,11 +20,8 @@ public class Interfacedemarrage extends javax.swing.JFrame {
     }
     FenetreDeJeu fenetreJeu2x2_infini = new FenetreDeJeu();
     
-    
-    
 
     
-
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -173,6 +170,7 @@ public class Interfacedemarrage extends javax.swing.JFrame {
     private void btn_2x2_classique1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2x2_classique1ActionPerformed
         fenetreJeu2x2_infini.setVisible(true);
         fenetreJeu2x2_infini.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        
     }//GEN-LAST:event_btn_2x2_classique1ActionPerformed
 
     private void btn_4x4_classiqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_4x4_classiqueActionPerformed
@@ -229,6 +227,9 @@ public class Interfacedemarrage extends javax.swing.JFrame {
             }
         });
     }
+    
+
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_100x100_infini;

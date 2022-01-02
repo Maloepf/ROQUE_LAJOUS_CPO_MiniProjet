@@ -10,6 +10,7 @@ package speed.click;
 public class Grille {
     Cellule [][] CellulesJeu;
     
+    
     public Grille(int t){
         CellulesJeu=new Cellule[t][t];
         for (int l = 0 ; l<t ; l++){
@@ -18,6 +19,10 @@ public class Grille {
             }
         }
     }
+
+
+
+
     
     public void allumerCellule (int x, int y){
         CellulesJeu[x][y].allumer();
