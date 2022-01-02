@@ -11,7 +11,7 @@ import java.util.Random;
 public class FenetreDeJeu extends javax.swing.JFrame {
 
     Cellule [][] CellulesJeu;
-    Grille grilleJeu;
+    
 
     public FenetreDeJeu() {
         initComponents();
