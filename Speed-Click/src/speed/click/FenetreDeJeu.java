@@ -73,35 +73,35 @@ public class FenetreDeJeu extends javax.swing.JFrame {
 
         grilleJeu_graphique.setBackground(new java.awt.Color(204, 255, 255));
         grilleJeu_graphique.setPreferredSize(new java.awt.Dimension(520, 520));
-        grilleJeu_graphique.setLayout(new java.awt.GridLayout(2, 2));
+        grilleJeu_graphique.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         cellule11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cellule11ActionPerformed(evt);
             }
         });
-        grilleJeu_graphique.add(cellule11);
+        grilleJeu_graphique.add(cellule11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 300, 300));
 
         cellule12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cellule12ActionPerformed(evt);
             }
         });
-        grilleJeu_graphique.add(cellule12);
+        grilleJeu_graphique.add(cellule12, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, 300, 300));
 
         cellule21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cellule21ActionPerformed(evt);
             }
         });
-        grilleJeu_graphique.add(cellule21);
+        grilleJeu_graphique.add(cellule21, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 300, 300));
 
         cellule22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cellule22ActionPerformed(evt);
             }
         });
-        grilleJeu_graphique.add(cellule22);
+        grilleJeu_graphique.add(cellule22, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 300, 300, 300));
 
         getContentPane().add(grilleJeu_graphique, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 600, 600));
 
@@ -177,7 +177,7 @@ public class FenetreDeJeu extends javax.swing.JFrame {
 
         getContentPane().add(infospartie, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 460, 310, 120));
 
-        setBounds(0, 0, 996, 662);
+        setBounds(0, 0, 1000, 668);
     }// </editor-fold>//GEN-END:initComponents
 
     private void STARTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_STARTActionPerformed
