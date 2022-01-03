@@ -8,6 +8,8 @@ public class Interfacedemarrage extends javax.swing.JFrame {
 
     public Interfacedemarrage() {
         initComponents();
+        String nomJoueur1 = entrezpeudo.getText();
+        Joueur = new Joueur(nomJoueur1);
     }
     FenetreDeJeu fenetreJeu2x2_infini = new FenetreDeJeu();
     FenetreDeJeu fenetreJeu2x2_classique = new FenetreDeJeu();

@@ -15,7 +15,7 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     Cellule [][] CellulesJeu;
     Grille grilleJeu;
     Joueur joueurCourant;
-    double timer;
+    int Score;
     JButton [][] celluleGraphique=new JButton [2][2];
     
 
@@ -23,7 +23,7 @@ public class FenetreDeJeu extends javax.swing.JFrame {
 
     public FenetreDeJeu() {
         initComponents();
-
+        Score = 0;
         grilleJeu= new Grille(2);
         
         CellulesJeu=new Cellule [2][2];
@@ -33,13 +33,13 @@ public class FenetreDeJeu extends javax.swing.JFrame {
             }
         }
         
-        
         celluleGraphique[0][0]=cellule11;
         celluleGraphique[0][1]=cellule12;
         celluleGraphique[1][0]=cellule21;
         celluleGraphique[1][1]=cellule22;
         
-
+        allumerCelluleAleat();
+        allumerCelluleAleat_graph();
     }
 
     @SuppressWarnings("unchecked")
@@ -198,18 +198,30 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     }//GEN-LAST:event_cellule11ActionPerformed
 
     private void cellule21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule21ActionPerformed
-        allumerCelluleAleat() ;
-        allumerCelluleAleat_graph();
+        if (CellulesJeu[1][0].EstAllume){ 
+            eteindreCellule(1,0);
+            celluleGraphique[1][0].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+        }  
     }//GEN-LAST:event_cellule21ActionPerformed
 
     private void cellule12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12ActionPerformed
-        allumerCelluleAleat() ;
-        allumerCelluleAleat_graph();
+        if (CellulesJeu[0][1].EstAllume){ 
+            eteindreCellule(0,1);
+            celluleGraphique[0][1].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+        }  
     }//GEN-LAST:event_cellule12ActionPerformed
 
     private void cellule22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule22ActionPerformed
-        allumerCelluleAleat() ;
-        allumerCelluleAleat_graph();
+        if (CellulesJeu[1][1].EstAllume){ 
+            eteindreCellule(1,1);
+            celluleGraphique[1][1].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+        } 
     }//GEN-LAST:event_cellule22ActionPerformed
 
 
