@@ -30,15 +30,12 @@ public class Interfacedemarrage extends javax.swing.JFrame {
         partie2x2 = new javax.swing.JLabel();
         partie4X4 = new javax.swing.JLabel();
         partie16x16 = new javax.swing.JLabel();
-        partie100x100 = new javax.swing.JLabel();
         btn_2x2_infini = new javax.swing.JButton();
-        btn_100x100_infini = new javax.swing.JButton();
         btn_2x2_classique1 = new javax.swing.JButton();
         btn_4x4_classique = new javax.swing.JButton();
         btn_4x4_infini = new javax.swing.JButton();
         btn_16x16_classique = new javax.swing.JButton();
         btn_2x2_classique5 = new javax.swing.JButton();
-        btn_2x2_btn_100x100_classique = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setName("panel demarrage"); // NOI18N
@@ -76,10 +73,6 @@ public class Interfacedemarrage extends javax.swing.JFrame {
         partie16x16.setText("16x16");
         btn_16x16_infini.add(partie16x16, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 230, 80, 30));
 
-        partie100x100.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        partie100x100.setText("100x100");
-        btn_16x16_infini.add(partie100x100, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 230, 130, 40));
-
         btn_2x2_infini.setText("infini");
         btn_2x2_infini.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,14 +80,6 @@ public class Interfacedemarrage extends javax.swing.JFrame {
             }
         });
         btn_16x16_infini.add(btn_2x2_infini, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 390, 110, 40));
-
-        btn_100x100_infini.setText("infini");
-        btn_100x100_infini.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_100x100_infiniActionPerformed(evt);
-            }
-        });
-        btn_16x16_infini.add(btn_100x100_infini, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 390, 110, 40));
 
         btn_2x2_classique1.setText("classique");
         btn_2x2_classique1.addActionListener(new java.awt.event.ActionListener() {
@@ -136,14 +121,6 @@ public class Interfacedemarrage extends javax.swing.JFrame {
         });
         btn_16x16_infini.add(btn_2x2_classique5, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 390, 110, 40));
 
-        btn_2x2_btn_100x100_classique.setText("classique");
-        btn_2x2_btn_100x100_classique.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_2x2_btn_100x100_classiqueActionPerformed(evt);
-            }
-        });
-        btn_16x16_infini.add(btn_2x2_btn_100x100_classique, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 300, 110, 40));
-
         getContentPane().add(btn_16x16_infini, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 1040, 580));
 
         pack();
@@ -157,10 +134,6 @@ public class Interfacedemarrage extends javax.swing.JFrame {
         fenetreJeu2x2_infini.setVisible(true);
         fenetreJeu2x2_infini.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_btn_2x2_infiniActionPerformed
-
-    private void btn_100x100_infiniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_100x100_infiniActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_100x100_infiniActionPerformed
 
     private void btn_2x2_classique1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2x2_classique1ActionPerformed
           fenetreJeu2x2_classique.setVisible(true);
@@ -187,10 +160,6 @@ public class Interfacedemarrage extends javax.swing.JFrame {
         fenetreJeu16x16_infini.setVisible(true);
         fenetreJeu16x16_infini.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_btn_2x2_classique5ActionPerformed
-
-    private void btn_2x2_btn_100x100_classiqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2x2_btn_100x100_classiqueActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_2x2_btn_100x100_classiqueActionPerformed
 
     /**
      * @param args the command line arguments
@@ -231,10 +200,8 @@ public class Interfacedemarrage extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_100x100_infini;
     private javax.swing.JButton btn_16x16_classique;
     private javax.swing.JPanel btn_16x16_infini;
-    private javax.swing.JButton btn_2x2_btn_100x100_classique;
     private javax.swing.JButton btn_2x2_classique1;
     private javax.swing.JButton btn_2x2_classique5;
     private javax.swing.JButton btn_2x2_infini;
@@ -244,7 +211,6 @@ public class Interfacedemarrage extends javax.swing.JFrame {
     private javax.swing.JScrollBar jScrollBar1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel partie;
-    private javax.swing.JLabel partie100x100;
     private javax.swing.JLabel partie16x16;
     private javax.swing.JLabel partie2x2;
     private javax.swing.JLabel partie4X4;

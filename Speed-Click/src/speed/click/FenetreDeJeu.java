@@ -51,22 +51,17 @@ public class FenetreDeJeu extends javax.swing.JFrame {
         cellule12 = new javax.swing.JButton();
         cellule21 = new javax.swing.JButton();
         cellule22 = new javax.swing.JButton();
-        chronometre = new javax.swing.JPanel();
-        chronometre1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        START = new javax.swing.JButton();
         infosjoueur = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        scorejoueur = new javax.swing.JLabel();
-        nomjoueur = new javax.swing.JLabel();
-        recordnomjoueur = new javax.swing.JLabel();
+        scorejoueur1 = new javax.swing.JLabel();
+        nomjoueur1 = new javax.swing.JLabel();
+        recordnomjoueur1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        infospartie = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        mode1 = new javax.swing.JButton();
+        panneaumodepartie = new javax.swing.JPanel();
+        jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -105,27 +100,6 @@ public class FenetreDeJeu extends javax.swing.JFrame {
 
         getContentPane().add(grilleJeu_graphique, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 600, 600));
 
-        chronometre.setBackground(new java.awt.Color(255, 255, 204));
-        chronometre.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        chronometre1.setBackground(new java.awt.Color(255, 255, 204));
-        chronometre1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        chronometre.add(chronometre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 30, 310, 130));
-
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel1.setText("Chronomètre : ");
-        chronometre.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 100, 30));
-
-        START.setText("START");
-        START.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                STARTActionPerformed(evt);
-            }
-        });
-        chronometre.add(START, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 140, 40));
-
-        getContentPane().add(chronometre, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 30, 310, 130));
-
         infosjoueur.setBackground(new java.awt.Color(255, 255, 204));
         infosjoueur.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -133,17 +107,17 @@ public class FenetreDeJeu extends javax.swing.JFrame {
         jLabel2.setText("Infos Joueurs : ");
         infosjoueur.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 130, 20));
 
-        scorejoueur.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        scorejoueur.setText("scorejoueur");
-        infosjoueur.add(scorejoueur, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 80, 20));
+        scorejoueur1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        scorejoueur1.setText("scorejoueur1");
+        infosjoueur.add(scorejoueur1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 80, 20));
 
-        nomjoueur.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        nomjoueur.setText("nomjoueur");
-        infosjoueur.add(nomjoueur, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 80, 20));
+        nomjoueur1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        nomjoueur1.setText("nomjoueur1");
+        infosjoueur.add(nomjoueur1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 80, 20));
 
-        recordnomjoueur.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        recordnomjoueur.setText("reccordnomjoueur");
-        infosjoueur.add(recordnomjoueur, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 120, 20));
+        recordnomjoueur1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        recordnomjoueur1.setText("reccordnomjoueur1");
+        infosjoueur.add(recordnomjoueur1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 120, 20));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText("Score : ");
@@ -160,33 +134,22 @@ public class FenetreDeJeu extends javax.swing.JFrame {
 
         getContentPane().add(infosjoueur, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 180, 310, 250));
 
-        infospartie.setBackground(new java.awt.Color(255, 255, 204));
-        infospartie.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panneaumodepartie.setBackground(new java.awt.Color(255, 153, 255));
+        panneaumodepartie.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel3.setText("Selectionner mode de jeu : ");
-        infospartie.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 230, 20));
-
-        mode1.setText("mode1");
-        mode1.addActionListener(new java.awt.event.ActionListener() {
+        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField1.setText("Bienvenue dans la Partie 2x2 infini !");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mode1ActionPerformed(evt);
+                jTextField1ActionPerformed(evt);
             }
         });
-        infospartie.add(mode1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, -1));
+        panneaumodepartie.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 307, 48));
 
-        getContentPane().add(infospartie, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 460, 310, 120));
+        getContentPane().add(panneaumodepartie, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 60, 380, -1));
 
-        setBounds(0, 0, 1000, 668);
+        setBounds(0, 0, 1077, 771);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void STARTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_STARTActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_STARTActionPerformed
-
-    private void mode1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mode1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_mode1ActionPerformed
 
     private void cellule11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11ActionPerformed
         if (CellulesJeu[0][0].EstAllume){ 
@@ -223,6 +186,10 @@ public class FenetreDeJeu extends javax.swing.JFrame {
             allumerCelluleAleat_graph();
         } 
     }//GEN-LAST:event_cellule22ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
 
     public static void main(String args[]) {
@@ -290,26 +257,21 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton START;
     private javax.swing.JButton cellule11;
     private javax.swing.JButton cellule12;
     private javax.swing.JButton cellule21;
     private javax.swing.JButton cellule22;
-    private javax.swing.JPanel chronometre;
-    private javax.swing.JPanel chronometre1;
     private javax.swing.JPanel grilleJeu_graphique;
     private javax.swing.JPanel infosjoueur;
-    private javax.swing.JPanel infospartie;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JButton mode1;
-    private javax.swing.JLabel nomjoueur;
-    private javax.swing.JLabel recordnomjoueur;
-    private javax.swing.JLabel scorejoueur;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel nomjoueur1;
+    private javax.swing.JPanel panneaumodepartie;
+    private javax.swing.JLabel recordnomjoueur1;
+    private javax.swing.JLabel scorejoueur1;
     // End of variables declaration//GEN-END:variables
 }
