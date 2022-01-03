@@ -242,7 +242,7 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     }
     
     public void allumerCelluleAleat() {
-        grilleJeu.allumerCellule(new Random().nextInt(2),new Random().nextInt(2)); 
+        allumerCellule(new Random().nextInt(2),new Random().nextInt(2)); 
     }
     
     public void allumerCelluleAleat_graph(){
