@@ -16,7 +16,7 @@ public class Interfacedemarrage extends javax.swing.JFrame {
     FenetreDeJeu fenetreJeu4x4_infini = new FenetreDeJeu();
     FenetreDeJeu fenetreJeu4x4_classique = new FenetreDeJeu();
     FenetreDeJeu fenetreJeu16x16_infini = new FenetreDeJeu();
-
+    FenetreDeJeu fenetreJeu16x16_classique = new FenetreDeJeu();
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -179,7 +179,8 @@ public class Interfacedemarrage extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_4x4_infiniActionPerformed
 
     private void btn_16x16_classiqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_16x16_classiqueActionPerformed
-        // TODO add your handling code here:
+        fenetreJeu16x16_classique.setVisible(true);
+        fenetreJeu16x16_classique.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_btn_16x16_classiqueActionPerformed
 
     private void btn_2x2_classique5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2x2_classique5ActionPerformed
