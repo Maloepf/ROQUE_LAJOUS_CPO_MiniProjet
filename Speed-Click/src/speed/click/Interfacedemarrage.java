@@ -14,7 +14,7 @@ public class Interfacedemarrage extends javax.swing.JFrame {
     FenetreDeJeu fenetreJeu2x2_infini = new FenetreDeJeu();
     FenetreDeJeu fenetreJeu2x2_classique = new FenetreDeJeu();
     FenetreDeJeu fenetreJeu4x4_infini = new FenetreDeJeu();
-
+    FenetreDeJeu fenetreJeu4x4_classique = new FenetreDeJeu();
     
 
     @SuppressWarnings("unchecked")
@@ -168,7 +168,9 @@ public class Interfacedemarrage extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_2x2_classique1ActionPerformed
 
     private void btn_4x4_classiqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_4x4_classiqueActionPerformed
-        // TODO add your handling code here:
+        fenetreJeu4x4_classique.setVisible(true);
+        fenetreJeu4x4_classique.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        
     }//GEN-LAST:event_btn_4x4_classiqueActionPerformed
 
     private void btn_4x4_infiniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_4x4_infiniActionPerformed

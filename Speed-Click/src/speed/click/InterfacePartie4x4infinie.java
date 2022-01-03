@@ -114,6 +114,7 @@ public class InterfacePartie4x4infinie extends javax.swing.JFrame {
         getContentPane().add(infosjoueur2, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 130, 310, 250));
 
         panneaumodepartie.setBackground(new java.awt.Color(255, 153, 255));
+        panneaumodepartie.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField1.setText("Bienvenue dans la Partie 4x4 infini !");
@@ -122,23 +123,7 @@ public class InterfacePartie4x4infinie extends javax.swing.JFrame {
                 jTextField1ActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout panneaumodepartieLayout = new javax.swing.GroupLayout(panneaumodepartie);
-        panneaumodepartie.setLayout(panneaumodepartieLayout);
-        panneaumodepartieLayout.setHorizontalGroup(
-            panneaumodepartieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panneaumodepartieLayout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(37, Short.MAX_VALUE))
-        );
-        panneaumodepartieLayout.setVerticalGroup(
-            panneaumodepartieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panneaumodepartieLayout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
-        );
+        panneaumodepartie.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 307, 48));
 
         getContentPane().add(panneaumodepartie, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 10, 380, -1));
 
