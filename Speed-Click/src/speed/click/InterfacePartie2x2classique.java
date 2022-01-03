@@ -4,6 +4,10 @@
  */
 package speed.click;
 
+import java.awt.Color;
+import java.util.Random;
+import javax.swing.JButton;
+
 /**
  *
  * @author daphn
@@ -13,9 +17,37 @@ public class InterfacePartie2x2classique extends javax.swing.JFrame {
     /**
      * Creates new form InterfacePartie2x2classique
      */
+    
+    
+    Cellule [][] CellulesJeu;
+    Grille grilleJeu;
+    Joueur joueurCourant;
+    double timer;
+    JButton [][] celluleGraphique=new JButton [2][2];
+    
+    
     public InterfacePartie2x2classique() {
         initComponents();
+        
+         grilleJeu= new Grille(2);
+        
+        CellulesJeu=new Cellule [2][2];
+        for (int l = 0 ; l<2 ; l++){
+            for(int c=0 ; c<2 ; c++){
+                CellulesJeu[l][c]= new Cellule();
+            }
+        }
+        
+        
+        celluleGraphique[0][0]=cellule11;
+        celluleGraphique[0][1]=cellule12;
+        celluleGraphique[1][0]=cellule21;
+        celluleGraphique[1][1]=cellule22;
+        
+
     }
+
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -202,6 +234,31 @@ public class InterfacePartie2x2classique extends javax.swing.JFrame {
             }
         });
     }
+    
+    
+     public void allumerCelluleAleat() {
+        allumerCellule(new Random().nextInt(2),new Random().nextInt(2)); 
+    }
+    
+    public void allumerCelluleAleat_graph(){
+        for (int l =0; l<2; l++){
+            for (int c = 0; c<2; c++){
+                if (CellulesJeu[c][l].EstAllume){ 
+                    celluleGraphique[c][l].setBackground(Color.RED);
+                }
+            }
+        }
+    }
+    
+    public void allumerCellule (int x, int y){
+        CellulesJeu[x][y].allumer();
+    }
+    
+    public void eteindreCellule (int x, int y){
+        CellulesJeu[x][y].eteindre();
+    }
+    
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton START;
