@@ -9,6 +9,7 @@ package speed.click;
 import java.awt.Color;
 import java.util.Random;
 import javax.swing.JButton;
+
 public class FenetreDeJeu extends javax.swing.JFrame {
 
     Cellule [][] CellulesJeu;
@@ -24,6 +25,13 @@ public class FenetreDeJeu extends javax.swing.JFrame {
         initComponents();
 
         grilleJeu= new Grille(2);
+        
+        CellulesJeu=new Cellule [2][2];
+        for (int l = 0 ; l<2 ; l++){
+            for(int c=0 ; c<2 ; c++){
+                CellulesJeu[l][c]= new Cellule();
+            }
+        }
         
         
         celluleGraphique[0][0]=cellule11;
@@ -246,6 +254,7 @@ public class FenetreDeJeu extends javax.swing.JFrame {
             }
         }
     }
+
 
    
 
