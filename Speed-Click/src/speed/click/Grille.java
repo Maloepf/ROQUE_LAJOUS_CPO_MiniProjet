@@ -12,7 +12,7 @@ public class Grille {
     
     
     public Grille(int t){
-        CellulesJeu=new Cellule[t][t];
+        CellulesJeu=new Cellule [t][t];
         for (int l = 0 ; l<t ; l++){
             for(int c=0 ; c<t ; c++){
                 CellulesJeu[l][c]= new Cellule();

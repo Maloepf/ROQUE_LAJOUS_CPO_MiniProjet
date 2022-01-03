@@ -8,29 +8,30 @@ package speed.click;
 
 import java.awt.Color;
 import java.util.Random;
-
+import javax.swing.JButton;
 public class FenetreDeJeu extends javax.swing.JFrame {
 
     Cellule [][] CellulesJeu;
     Grille grilleJeu;
     Joueur joueurCourant;
     double timer;
-    javax.swing.JButton [][] celluleGraphique=new javax.swing.JButton [2][2];
+    JButton [][] celluleGraphique=new JButton [2][2];
     
 
     
 
     public FenetreDeJeu() {
         initComponents();
+
         grilleJeu= new Grille(2);
+        
         
         celluleGraphique[0][0]=cellule11;
         celluleGraphique[0][1]=cellule12;
         celluleGraphique[1][0]=cellule21;
         celluleGraphique[1][1]=cellule22;
         
-        allumerCelluleAleat() ;
-        allumerCelluleAleat_graph();
+
     }
 
     @SuppressWarnings("unchecked")
@@ -239,7 +240,7 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     public void allumerCelluleAleat_graph(){
         for (int l =0; l<2; l++){
             for (int c = 0; c<2; c++){
-                if (CellulesJeu[c][l].EstAllume){ //Faire la méthode de la condition si la cellule est allumer et l'afficher
+                if (CellulesJeu[c][l].EstAllume){ 
                     celluleGraphique[c][l].setBackground(Color.RED);
                 }
             }
