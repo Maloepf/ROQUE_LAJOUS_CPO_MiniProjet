@@ -28,6 +28,9 @@ public class FenetreDeJeu extends javax.swing.JFrame {
         celluleGraphique[0][1]=cellule12;
         celluleGraphique[1][0]=cellule21;
         celluleGraphique[1][1]=cellule22;
+        
+        allumerCelluleAleat() ;
+        allumerCelluleAleat_graph();
     }
 
     @SuppressWarnings("unchecked")
@@ -83,6 +86,12 @@ public class FenetreDeJeu extends javax.swing.JFrame {
             }
         });
         grilleJeu_graphique.add(cellule21);
+
+        cellule22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule22ActionPerformed(evt);
+            }
+        });
         grilleJeu_graphique.add(cellule22);
 
         getContentPane().add(grilleJeu_graphique, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 600, 600));
@@ -171,18 +180,24 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     }//GEN-LAST:event_mode1ActionPerformed
 
     private void cellule11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11ActionPerformed
-    allumerCelluleAleat() ;
-    
-    
+        allumerCelluleAleat() ;
+  
     }//GEN-LAST:event_cellule11ActionPerformed
 
     private void cellule21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule21ActionPerformed
-        // TODO add your handling code here:
+        allumerCelluleAleat() ;
+        allumerCelluleAleat_graph();
     }//GEN-LAST:event_cellule21ActionPerformed
 
     private void cellule12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12ActionPerformed
-        // TODO add your handling code here:
+        allumerCelluleAleat() ;
+        allumerCelluleAleat_graph();
     }//GEN-LAST:event_cellule12ActionPerformed
+
+    private void cellule22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule22ActionPerformed
+        allumerCelluleAleat() ;
+        allumerCelluleAleat_graph();
+    }//GEN-LAST:event_cellule22ActionPerformed
 
 
     public static void main(String args[]) {
