@@ -189,8 +189,12 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     }//GEN-LAST:event_mode1ActionPerformed
 
     private void cellule11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11ActionPerformed
-        allumerCelluleAleat() ;
-        allumerCelluleAleat_graph();
+        if (CellulesJeu[0][0].EstAllume){ 
+            eteindreCellule(0,0);
+            celluleGraphique[0][0].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+        }          
     }//GEN-LAST:event_cellule11ActionPerformed
 
     private void cellule21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule21ActionPerformed
@@ -247,12 +251,8 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     
     public void allumerCelluleAleat_graph(){
         for (int l =0; l<2; l++){
-            System.out.println("l"+l);
             for (int c = 0; c<2; c++){
-                System.out.println("c"+c);
-                System.out.println("CellulesJeu[c][l].EstAllume"+CellulesJeu[c][l].EstAllume);
                 if (CellulesJeu[c][l].EstAllume){ 
-                    System.out.println("CellulesJeu[c][l].EstAllume"+CellulesJeu[c][l].EstAllume);
                     celluleGraphique[c][l].setBackground(Color.RED);
                 }
             }
@@ -261,6 +261,10 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     
     public void allumerCellule (int x, int y){
         CellulesJeu[x][y].allumer();
+    }
+    
+    public void eteindreCellule (int x, int y){
+        CellulesJeu[x][y].eteindre();
     }
     
 
