@@ -54,6 +54,9 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="cellule12">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cellule12ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="cellule21">
           <Events>

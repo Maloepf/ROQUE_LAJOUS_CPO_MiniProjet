@@ -15,6 +15,7 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     Grille grilleJeu;
     Joueur joueurCourant;
     double timer;
+    javax.swing.JButton [][] celluleGraphique=new javax.swing.JButton [2][2];
     
 
     
@@ -22,6 +23,11 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     public FenetreDeJeu() {
         initComponents();
         grilleJeu= new Grille(2);
+        
+        celluleGraphique[0][0]=cellule11;
+        celluleGraphique[0][1]=cellule12;
+        celluleGraphique[1][0]=cellule21;
+        celluleGraphique[1][1]=cellule22;
     }
 
     @SuppressWarnings("unchecked")
@@ -63,6 +69,12 @@ public class FenetreDeJeu extends javax.swing.JFrame {
             }
         });
         grilleJeu_graphique.add(cellule11);
+
+        cellule12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule12ActionPerformed(evt);
+            }
+        });
         grilleJeu_graphique.add(cellule12);
 
         cellule21.addActionListener(new java.awt.event.ActionListener() {
@@ -168,6 +180,10 @@ public class FenetreDeJeu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cellule21ActionPerformed
 
+    private void cellule12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule12ActionPerformed
+
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -202,14 +218,14 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     }
     
     public void allumerCelluleAleat() {
-    grilleJeu.allumerCellule(new Random().nextInt(2),new Random().nextInt(2)); 
+        grilleJeu.allumerCellule(new Random().nextInt(2),new Random().nextInt(2)); 
     }
     
     public void allumerCelluleAleat_graph(){
         for (int l =0; l<2; l++){
             for (int c = 0; c<2; c++){
-                if (CellulesJeu[c][l].EstAllumer){ //Faire la méthode de la condition si la cellule est allumer et l'afficher
-                    
+                if (CellulesJeu[c][l].EstAllume){ //Faire la méthode de la condition si la cellule est allumer et l'afficher
+                    celluleGraphique[c][l].setBackground(Color.RED);
                 }
             }
         }
