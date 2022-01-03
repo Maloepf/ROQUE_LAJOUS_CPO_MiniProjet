@@ -60,6 +60,7 @@ public class InterfacePartie4x4classique extends javax.swing.JFrame {
         START = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         PanneauGrille_4x4.setBackground(new java.awt.Color(204, 255, 255));
         PanneauGrille_4x4.setLayout(new java.awt.GridLayout(4, 4));
@@ -80,6 +81,8 @@ public class InterfacePartie4x4classique extends javax.swing.JFrame {
         PanneauGrille_4x4.add(jButton15);
         PanneauGrille_4x4.add(jButton16);
 
+        getContentPane().add(PanneauGrille_4x4, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 132, 600, 600));
+
         panneaumodepartie.setBackground(new java.awt.Color(255, 153, 255));
         panneaumodepartie.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -91,6 +94,8 @@ public class InterfacePartie4x4classique extends javax.swing.JFrame {
             }
         });
         panneaumodepartie.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 307, 48));
+
+        getContentPane().add(panneaumodepartie, new org.netbeans.lib.awtextra.AbsoluteConstraints(711, 123, 380, -1));
 
         infosjoueur2.setBackground(new java.awt.Color(255, 255, 204));
         infosjoueur2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -124,6 +129,8 @@ public class InterfacePartie4x4classique extends javax.swing.JFrame {
         jLabel7.setText("Reccord : ");
         infosjoueur2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 80, 20));
 
+        getContentPane().add(infosjoueur2, new org.netbeans.lib.awtextra.AbsoluteConstraints(752, 436, 310, 250));
+
         chronometre2.setBackground(new java.awt.Color(255, 255, 204));
         chronometre2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -143,43 +150,7 @@ public class InterfacePartie4x4classique extends javax.swing.JFrame {
         });
         chronometre2.add(START, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 140, 40));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(711, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(panneaumodepartie, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(chronometre2, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(infosjoueur2, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(59, 59, 59))))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap(85, Short.MAX_VALUE)
-                    .addComponent(PanneauGrille_4x4, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(436, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(123, 123, 123)
-                .addComponent(panneaumodepartie, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)
-                .addComponent(chronometre2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(64, 64, 64)
-                .addComponent(infosjoueur2, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(178, 178, 178))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap(132, Short.MAX_VALUE)
-                    .addComponent(PanneauGrille_4x4, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(132, Short.MAX_VALUE)))
-        );
+        getContentPane().add(chronometre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(752, 242, 310, 130));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
