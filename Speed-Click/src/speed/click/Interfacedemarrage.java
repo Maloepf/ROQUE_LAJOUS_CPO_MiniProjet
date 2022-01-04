@@ -130,7 +130,7 @@ public class Interfacedemarrage extends javax.swing.JFrame {
     }//GEN-LAST:event_entrezpeudoActionPerformed
 
     private void btn_2x2_infiniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2x2_infiniActionPerformed
-        FenetreDeJeu fenetreJeu2x2_infini = new FenetreDeJeu();
+        InterfacePartie2x2Infinie fenetreJeu2x2_infini = new InterfacePartie2x2Infinie();
         fenetreJeu2x2_infini.setVisible(true);
         fenetreJeu2x2_infini.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         nomDuJoueur = entrezpeudo.getText();
