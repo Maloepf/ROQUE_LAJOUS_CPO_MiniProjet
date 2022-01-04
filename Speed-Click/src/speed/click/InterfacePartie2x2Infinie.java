@@ -19,9 +19,9 @@ public class InterfacePartie2x2Infinie extends JFrame{
     Grille grilleJeu;
     String PlayerName;
     Joueur Player;
-    int Score;
+    int Score; //attributs de la classe
 
-    JButton [][] celluleGraphique=new JButton [2][2];
+    JButton [][] celluleGraphique=new JButton [2][2]; //creation des boutons sous forme de tableau celluleGraphique
 
     public InterfacePartie2x2Infinie() {
         initComponents();
@@ -31,7 +31,7 @@ public class InterfacePartie2x2Infinie extends JFrame{
         
         grilleJeu= new Grille(2); //Création nouvelle grille
         
-        CellulesJeu=new Cellule [2][2]; //Création nouvelles cellules
+        CellulesJeu=new Cellule [2][2]; //Création nouvelles cellules (4 en tout)
         for (int l = 0 ; l<2 ; l++){
             for(int c=0 ; c<2 ; c++){
                 CellulesJeu[l][c]= new Cellule();
@@ -168,13 +168,13 @@ public class InterfacePartie2x2Infinie extends JFrame{
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void cellule00ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule00ActionPerformed
-        if (CellulesJeu[0][0].EstAllume){
-            Score++;
-            scorejoueur.setText(""+Score);
-            eteindreCellule(0,0);
-            celluleGraphique[0][0].setBackground(Color.lightGray);
-            allumerCelluleAleat();
-            allumerCelluleAleat_graph();
+        if (CellulesJeu[0][0].EstAllume){ //vérification si la cellule es allumée
+            Score++; //incrémentation du score -> mise a jour du score
+            scorejoueur.setText(""+Score);//affichage des scores sur l'interface
+            eteindreCellule(0,0); //on eteint ensuite la cellule avec la methode eteindre cellule
+            celluleGraphique[0][0].setBackground(Color.lightGray); //redonne à la cellule étainte la couleur initiale
+            allumerCelluleAleat(); //on allume une cellule aletoirment pour continuer le jeu
+            allumerCelluleAleat_graph(); //permet de donner une couleur à la cellule allumee aleatoirement
         }
     }//GEN-LAST:event_cellule00ActionPerformed
 
@@ -251,9 +251,9 @@ public class InterfacePartie2x2Infinie extends JFrame{
     
     public void allumerCelluleAleat_graph(){
         for (int l =0; l<2; l++){
-            for (int c = 0; c<2; c++){
+            for (int c = 0; c<2; c++){ //parcours du tableau de cellule et une cellule est allumee
                 if (CellulesJeu[c][l].EstAllume){ 
-                    celluleGraphique[c][l].setBackground(Color.RED);
+                    celluleGraphique[c][l].setBackground(Color.RED); //donne la couleur rouge à la cellule allumée
                 }
             }
         }
@@ -267,7 +267,7 @@ public class InterfacePartie2x2Infinie extends JFrame{
         CellulesJeu[x][y].eteindre();
     }
     
-    public void AssimilationNom(){
+    public void AssimilationNom(){ //permet d'afficher le nom et le score du joueur sur l'interface
         Player= new Joueur(PlayerName);
         System.out.println(PlayerName);
         nomjoueur.setText(PlayerName);

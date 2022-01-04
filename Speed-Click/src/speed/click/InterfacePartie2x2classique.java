@@ -214,7 +214,7 @@ public class InterfacePartie2x2classique extends JFrame implements ActionListene
             celluleGraphique[0][0].setBackground(Color.lightGray);
             allumerCelluleAleat();
             allumerCelluleAleat_graph();
-            startDTimer ();
+            startDTimer (); //demarrage du timer
         }
     }//GEN-LAST:event_cellule00ActionPerformed
 
