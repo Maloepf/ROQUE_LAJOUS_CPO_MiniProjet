@@ -23,8 +23,12 @@ public class FenetreDeJeu extends javax.swing.JFrame {
 
     public FenetreDeJeu() {
         initComponents();
+        String playerName=Interfacedemarrage.getnomDuJoueur();
+        nomjoueur.setText(playerName);
+
         Score = 0;
         grilleJeu= new Grille(2);
+        
         
         CellulesJeu=new Cellule [2][2];
         for (int l = 0 ; l<2 ; l++){
@@ -54,12 +58,12 @@ public class FenetreDeJeu extends javax.swing.JFrame {
         infosjoueur = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         scorejoueur1 = new javax.swing.JLabel();
-        nomjoueur1 = new javax.swing.JLabel();
+        nomjoueur = new javax.swing.JLabel();
         recordnomjoueur1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        Nom = new javax.swing.JLabel();
+        Record = new javax.swing.JLabel();
         panneaumodepartie = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
 
@@ -111,9 +115,9 @@ public class FenetreDeJeu extends javax.swing.JFrame {
         scorejoueur1.setText("scorejoueur1");
         infosjoueur.add(scorejoueur1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 80, 20));
 
-        nomjoueur1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        nomjoueur1.setText("nomjoueur1");
-        infosjoueur.add(nomjoueur1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 80, 20));
+        nomjoueur.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        nomjoueur.setText("nomjoueur");
+        infosjoueur.add(nomjoueur, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 80, 20));
 
         recordnomjoueur1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         recordnomjoueur1.setText("reccordnomjoueur1");
@@ -124,21 +128,21 @@ public class FenetreDeJeu extends javax.swing.JFrame {
         infosjoueur.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 80, 20));
         infosjoueur.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 270, -1));
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel6.setText("Nom : ");
-        infosjoueur.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 80, 20));
+        Nom.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Nom.setText("Nom : ");
+        infosjoueur.add(Nom, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 80, 20));
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel7.setText("Reccord : ");
-        infosjoueur.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 80, 20));
+        Record.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Record.setText("Reccord : ");
+        infosjoueur.add(Record, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 80, 20));
 
-        getContentPane().add(infosjoueur, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 180, 310, 250));
+        getContentPane().add(infosjoueur, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 180, 310, 250));
 
         panneaumodepartie.setBackground(new java.awt.Color(255, 153, 255));
         panneaumodepartie.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTextField1.setText("Bienvenue dans la Partie 2x2 infini !");
+        jTextField1.setText("Bienvenue dans la Partie 2x2 classique");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -257,6 +261,8 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Nom;
+    private javax.swing.JLabel Record;
     private javax.swing.JButton cellule11;
     private javax.swing.JButton cellule12;
     private javax.swing.JButton cellule21;
@@ -265,11 +271,9 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     private javax.swing.JPanel infosjoueur;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JLabel nomjoueur1;
+    private javax.swing.JLabel nomjoueur;
     private javax.swing.JPanel panneaumodepartie;
     private javax.swing.JLabel recordnomjoueur1;
     private javax.swing.JLabel scorejoueur1;

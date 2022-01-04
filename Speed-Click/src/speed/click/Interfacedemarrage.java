@@ -5,11 +5,15 @@ import javax.swing.JFrame;
 
 public class Interfacedemarrage extends javax.swing.JFrame {
 
+    static String nomDuJoueur;
 
     public Interfacedemarrage() {
         initComponents();
-        String nomDuJoueur = entrezpeudo.getText();
-        
+        nomDuJoueur = entrezpeudo.getText();
+    }
+    
+    static String getnomDuJoueur(){
+        return nomDuJoueur;
     }
     FenetreDeJeu fenetreJeu2x2_infini = new FenetreDeJeu();
     InterfacePartie2x2classique fenetreJeu2x2_classique = new InterfacePartie2x2classique();
@@ -161,9 +165,7 @@ public class Interfacedemarrage extends javax.swing.JFrame {
         fenetreJeu16x16_infini.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_btn_2x2_classique5ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -197,6 +199,7 @@ public class Interfacedemarrage extends javax.swing.JFrame {
     }
     
 
+
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -217,3 +220,5 @@ public class Interfacedemarrage extends javax.swing.JFrame {
     private javax.swing.JLabel pseudo;
     // End of variables declaration//GEN-END:variables
 }
+
+
