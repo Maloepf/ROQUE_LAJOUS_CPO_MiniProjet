@@ -16,11 +16,8 @@ public class Interfacedemarrage extends javax.swing.JFrame {
         return nomDuJoueur;
     }
     
-    InterfacePartie2x2classique fenetreJeu2x2_classique = new InterfacePartie2x2classique();
-    InterfacePartie4x4infinie fenetreJeu4x4_infini = new InterfacePartie4x4infinie();
-    InterfacePartie4x4classique fenetreJeu4x4_classique = new InterfacePartie4x4classique();
-    InterfacePartie16x16infini fenetreJeu16x16_infini = new InterfacePartie16x16infini();
-    InterfacePartie16x16classique fenetreJeu16x16_classique = new InterfacePartie16x16classique();
+    
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -142,27 +139,32 @@ public class Interfacedemarrage extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_2x2_infiniActionPerformed
 
     private void btn_2x2_classique1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2x2_classique1ActionPerformed
-          fenetreJeu2x2_classique.setVisible(true);
-          fenetreJeu2x2_classique.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        InterfacePartie2x2classique fenetreJeu2x2_classique = new InterfacePartie2x2classique();  
+        fenetreJeu2x2_classique.setVisible(true);
+        fenetreJeu2x2_classique.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_btn_2x2_classique1ActionPerformed
 
     private void btn_4x4_classiqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_4x4_classiqueActionPerformed
+        InterfacePartie4x4classique fenetreJeu4x4_classique = new InterfacePartie4x4classique();
         fenetreJeu4x4_classique.setVisible(true);
         fenetreJeu4x4_classique.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         
     }//GEN-LAST:event_btn_4x4_classiqueActionPerformed
 
     private void btn_4x4_infiniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_4x4_infiniActionPerformed
+        InterfacePartie4x4infinie fenetreJeu4x4_infini = new InterfacePartie4x4infinie();
         fenetreJeu4x4_infini.setVisible(true);
         fenetreJeu4x4_infini.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_btn_4x4_infiniActionPerformed
 
     private void btn_16x16_classiqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_16x16_classiqueActionPerformed
+        InterfacePartie16x16classique fenetreJeu16x16_classique = new InterfacePartie16x16classique();
         fenetreJeu16x16_classique.setVisible(true);
         fenetreJeu16x16_classique.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_btn_16x16_classiqueActionPerformed
 
     private void btn_2x2_classique5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2x2_classique5ActionPerformed
+        InterfacePartie16x16infini fenetreJeu16x16_infini = new InterfacePartie16x16infini();
         fenetreJeu16x16_infini.setVisible(true);
         fenetreJeu16x16_infini.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_btn_2x2_classique5ActionPerformed
