@@ -12,11 +12,11 @@ public class Interfacedemarrage extends javax.swing.JFrame {
         Joueur = new Joueur(nomJoueur1);
     }
     FenetreDeJeu fenetreJeu2x2_infini = new FenetreDeJeu();
-    FenetreDeJeu fenetreJeu2x2_classique = new FenetreDeJeu();
-    FenetreDeJeu fenetreJeu4x4_infini = new FenetreDeJeu();
-    FenetreDeJeu fenetreJeu4x4_classique = new FenetreDeJeu();
-    FenetreDeJeu fenetreJeu16x16_infini = new FenetreDeJeu();
-    FenetreDeJeu fenetreJeu16x16_classique = new FenetreDeJeu();
+    InterfacePartie2x2classique fenetreJeu2x2_classique = new InterfacePartie2x2classique();
+    InterfacePartie4x4infinie fenetreJeu4x4_infini = new InterfacePartie4x4infinie();
+    InterfacePartie4x4classique fenetreJeu4x4_classique = new InterfacePartie4x4classique();
+    InterfacePartie16x16infini fenetreJeu16x16_infini = new InterfacePartie16x16infini();
+    InterfacePartie16x16classique fenetreJeu16x16_classique = new InterfacePartie16x16classique();
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
