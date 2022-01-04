@@ -5,11 +5,11 @@ import javax.swing.JFrame;
 
 public class Interfacedemarrage extends javax.swing.JFrame {
 
-
+    Joueur player;
     public Interfacedemarrage() {
         initComponents();
-        String nomJoueur1 = entrezpeudo.getText();
-        Joueur = new Joueur(nomJoueur1);
+        String nomDuJoueur = entrezpeudo.getText();
+        player = new Joueur(nomDuJoueur);
     }
     FenetreDeJeu fenetreJeu2x2_infini = new FenetreDeJeu();
     InterfacePartie2x2classique fenetreJeu2x2_classique = new InterfacePartie2x2classique();
