@@ -484,8 +484,8 @@ public class InterfacePartie4x4infinie extends javax.swing.JFrame {
     
     
     public void allumerCelluleAleat_graph(){
-        for (int l =0; l<2; l++){
-            for (int c = 0; c<2; c++){
+        for (int l =0; l<4; l++){
+            for (int c = 0; c<4; c++){
                 if (CellulesJeu[c][l].EstAllume){ 
                     celluleGraphique[c][l].setBackground(Color.RED);
                 }
