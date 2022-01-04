@@ -4,17 +4,39 @@
  */
 package speed.click;
 
+import javax.swing.JButton;
+
 /**
  *
  * @author daphn
  */
 public class InterfacePartie4x4classique extends javax.swing.JFrame {
 
-    /**
-     * Creates new form InterfacePartie4x4classique
-     */
+JButton [][] celluleGraphique=new JButton [4][4];
+
     public InterfacePartie4x4classique() {
         initComponents();
+        
+        
+        
+        
+        
+        celluleGraphique[0][0]=cellule00;
+        celluleGraphique[0][1]=cellule01;
+        celluleGraphique[0][2]=cellule02;
+        celluleGraphique[0][3]=cellule03;
+        celluleGraphique[1][0]=cellule10;
+        celluleGraphique[1][1]=cellule11;
+        celluleGraphique[1][2]=cellule12;
+        celluleGraphique[1][3]=cellule13;
+        celluleGraphique[2][0]=cellule20;
+        celluleGraphique[2][1]=cellule21;
+        celluleGraphique[2][2]=cellule22;
+        celluleGraphique[2][3]=cellule23;
+        celluleGraphique[3][0]=cellule30;
+        celluleGraphique[3][1]=cellule31;
+        celluleGraphique[3][2]=cellule32;
+        celluleGraphique[3][3]=cellule33;
     }
 
     /**
@@ -26,23 +48,6 @@ public class InterfacePartie4x4classique extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        PanneauGrille_4x4 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
         panneaumodepartie = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
         infosjoueur2 = new javax.swing.JPanel();
@@ -58,30 +63,26 @@ public class InterfacePartie4x4classique extends javax.swing.JFrame {
         chronometre1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         START = new javax.swing.JButton();
+        PanneauGrille_4x4 = new javax.swing.JPanel();
+        cellule00 = new javax.swing.JButton();
+        cellule01 = new javax.swing.JButton();
+        cellule02 = new javax.swing.JButton();
+        cellule03 = new javax.swing.JButton();
+        cellule10 = new javax.swing.JButton();
+        cellule11 = new javax.swing.JButton();
+        cellule12 = new javax.swing.JButton();
+        cellule13 = new javax.swing.JButton();
+        cellule20 = new javax.swing.JButton();
+        cellule21 = new javax.swing.JButton();
+        cellule22 = new javax.swing.JButton();
+        cellule23 = new javax.swing.JButton();
+        cellule30 = new javax.swing.JButton();
+        cellule31 = new javax.swing.JButton();
+        cellule32 = new javax.swing.JButton();
+        cellule33 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        PanneauGrille_4x4.setBackground(new java.awt.Color(204, 255, 255));
-        PanneauGrille_4x4.setLayout(new java.awt.GridLayout(4, 4));
-        PanneauGrille_4x4.add(jButton1);
-        PanneauGrille_4x4.add(jButton2);
-        PanneauGrille_4x4.add(jButton3);
-        PanneauGrille_4x4.add(jButton4);
-        PanneauGrille_4x4.add(jButton5);
-        PanneauGrille_4x4.add(jButton6);
-        PanneauGrille_4x4.add(jButton7);
-        PanneauGrille_4x4.add(jButton8);
-        PanneauGrille_4x4.add(jButton9);
-        PanneauGrille_4x4.add(jButton10);
-        PanneauGrille_4x4.add(jButton11);
-        PanneauGrille_4x4.add(jButton12);
-        PanneauGrille_4x4.add(jButton13);
-        PanneauGrille_4x4.add(jButton14);
-        PanneauGrille_4x4.add(jButton15);
-        PanneauGrille_4x4.add(jButton16);
-
-        getContentPane().add(PanneauGrille_4x4, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 132, 600, 600));
 
         panneaumodepartie.setBackground(new java.awt.Color(255, 153, 255));
         panneaumodepartie.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -152,6 +153,27 @@ public class InterfacePartie4x4classique extends javax.swing.JFrame {
 
         getContentPane().add(chronometre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(752, 242, 310, 130));
 
+        PanneauGrille_4x4.setBackground(new java.awt.Color(204, 255, 255));
+        PanneauGrille_4x4.setLayout(new java.awt.GridLayout(4, 4));
+        PanneauGrille_4x4.add(cellule00);
+        PanneauGrille_4x4.add(cellule01);
+        PanneauGrille_4x4.add(cellule02);
+        PanneauGrille_4x4.add(cellule03);
+        PanneauGrille_4x4.add(cellule10);
+        PanneauGrille_4x4.add(cellule11);
+        PanneauGrille_4x4.add(cellule12);
+        PanneauGrille_4x4.add(cellule13);
+        PanneauGrille_4x4.add(cellule20);
+        PanneauGrille_4x4.add(cellule21);
+        PanneauGrille_4x4.add(cellule22);
+        PanneauGrille_4x4.add(cellule23);
+        PanneauGrille_4x4.add(cellule30);
+        PanneauGrille_4x4.add(cellule31);
+        PanneauGrille_4x4.add(cellule32);
+        PanneauGrille_4x4.add(cellule33);
+
+        getContentPane().add(PanneauGrille_4x4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 600, 600));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -201,25 +223,25 @@ public class InterfacePartie4x4classique extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PanneauGrille_4x4;
     private javax.swing.JButton START;
+    private javax.swing.JButton cellule00;
+    private javax.swing.JButton cellule01;
+    private javax.swing.JButton cellule02;
+    private javax.swing.JButton cellule03;
+    private javax.swing.JButton cellule10;
+    private javax.swing.JButton cellule11;
+    private javax.swing.JButton cellule12;
+    private javax.swing.JButton cellule13;
+    private javax.swing.JButton cellule20;
+    private javax.swing.JButton cellule21;
+    private javax.swing.JButton cellule22;
+    private javax.swing.JButton cellule23;
+    private javax.swing.JButton cellule30;
+    private javax.swing.JButton cellule31;
+    private javax.swing.JButton cellule32;
+    private javax.swing.JButton cellule33;
     private javax.swing.JPanel chronometre1;
     private javax.swing.JPanel chronometre2;
     private javax.swing.JPanel infosjoueur2;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
