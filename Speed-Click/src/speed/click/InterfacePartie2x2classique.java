@@ -23,6 +23,15 @@ public class InterfacePartie2x2classique extends JFrame implements ActionListene
     int TempsDeJeu;
     JButton [][] celluleGraphique=new JButton [2][2];
     
+    /*L'ensemble des lignes de codes du timer on étaient trouvé sur internet.
+    Ne comprenant pas le fonctionnement de celui fournit par Monsieur Darties,
+    nous nous somme permis de nous appropriez un autre code afin de répondre aux
+    consignes de l'exercice.
+    En effet, étant donner que ce code nous était donné, nous jugions correct 
+    de prendre un code que l'on comprenais.
+    */
+    
+    
     protected JLabel viewTime;  // composant permettant l'affichage du temps ecoule
     protected int timeCount;	// variable permettant de memoriser le temps ecoule
     protected Timer timer;	
@@ -30,22 +39,22 @@ public class InterfacePartie2x2classique extends JFrame implements ActionListene
     public InterfacePartie2x2classique() {
         initComponents();
         
-        TempsDeJeu=1;
-        Chrono.setText(""+TempsDeJeu);
+        TempsDeJeu=10; //Initialisation du temps de jeu
+        Chrono.setText(""+TempsDeJeu); //Affichage du temps de jeu
         
-        Score = 0;
-        scorejoueur.setText(""+Score);
+        Score = 0; //Initialisation du score en début de partit
+        scorejoueur.setText(""+Score); //Affichage du Score initiale
         
-        grilleJeu= new Grille(2);
+        grilleJeu= new Grille(2); //Création nouvelle grille
         
-        CellulesJeu=new Cellule [2][2];
+        CellulesJeu=new Cellule [2][2]; //Création nouvelles cellules
         for (int l = 0 ; l<2 ; l++){
             for(int c=0 ; c<2 ; c++){
                 CellulesJeu[l][c]= new Cellule();
             }
         }
         
-        celluleGraphique[0][0]=cellule00;
+        celluleGraphique[0][0]=cellule00; //Création tableau de type JButton contenant toutes les cellules graphiques
         celluleGraphique[0][1]=cellule01;
         celluleGraphique[1][0]=cellule10;
         celluleGraphique[1][1]=cellule11;
@@ -53,9 +62,9 @@ public class InterfacePartie2x2classique extends JFrame implements ActionListene
         allumerCelluleAleat();
         allumerCelluleAleat_graph();
         
-        this.timeCount = TempsDeJeu;
-	this.viewTime = Chrono;
-	this.timer = new Timer (1000, this);
+        this.timeCount = TempsDeJeu; // Initialisation du timer
+	this.viewTime = Chrono; // Affichage du décompte
+	this.timer = new Timer (1000, this); //Création timer
     }
 
 
