@@ -10,10 +10,10 @@ package speed.click;
  */
 public class Joueur {
     int score;
-    String name;    
+    String name;    //attributs de la classe joueur
     
     
-    public Joueur(String player){
+    public Joueur(String player){ //constructeur permettant d'attribuer un nom au joueur
         name = player;
 }
 }
