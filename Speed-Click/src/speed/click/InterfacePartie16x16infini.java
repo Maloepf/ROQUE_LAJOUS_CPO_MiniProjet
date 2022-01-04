@@ -32,9 +32,9 @@ JButton [][] celluleGraphique=new JButton [16][16];
         
         grilleJeu= new Grille(2); //Création nouvelle grille
         
-        CellulesJeu=new Cellule [2][2]; //Création nouvelles cellules
-        for (int l = 0 ; l<2 ; l++){
-            for(int c=0 ; c<2 ; c++){
+        CellulesJeu=new Cellule [16][16]; //Création nouvelles cellules
+        for (int l = 0 ; l<16 ; l++){
+            for(int c=0 ; c<16 ; c++){
                 CellulesJeu[l][c]= new Cellule();
             }
         }
@@ -5300,13 +5300,13 @@ if (CellulesJeu[6][15].EstAllume){
     
        
        public void allumerCelluleAleat() {
-        allumerCellule(new Random().nextInt(2),new Random().nextInt(2)); 
+        allumerCellule(new Random().nextInt(16),new Random().nextInt(16)); 
     }
     
     
     public void allumerCelluleAleat_graph(){
-        for (int l =0; l<2; l++){
-            for (int c = 0; c<2; c++){
+        for (int l =0; l<16; l++){
+            for (int c = 0; c<16; c++){
                 if (CellulesJeu[c][l].EstAllume){ 
                     celluleGraphique[c][l].setBackground(Color.RED);
                 }

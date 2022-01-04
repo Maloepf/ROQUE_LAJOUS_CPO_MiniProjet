@@ -30,9 +30,9 @@ public class InterfacePartie4x4infinie extends javax.swing.JFrame {
         
         grilleJeu= new Grille(2); //Création nouvelle grille
         
-        CellulesJeu=new Cellule [2][2]; //Création nouvelles cellules
-        for (int l = 0 ; l<2 ; l++){
-            for(int c=0 ; c<2 ; c++){
+        CellulesJeu=new Cellule [4][4]; //Création nouvelles cellules
+        for (int l = 0 ; l<4 ; l++){
+            for(int c=0 ; c<4 ; c++){
                 CellulesJeu[l][c]= new Cellule();
             }
         }
