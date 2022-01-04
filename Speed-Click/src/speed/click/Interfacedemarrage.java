@@ -151,7 +151,9 @@ public class Interfacedemarrage extends javax.swing.JFrame {
         InterfacePartie4x4classique fenetreJeu4x4_classique = new InterfacePartie4x4classique();
         fenetreJeu4x4_classique.setVisible(true);
         fenetreJeu4x4_classique.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        
+        nomDuJoueur = entrezpeudo.getText();
+        fenetreJeu4x4_classique.PlayerName=nomDuJoueur;
+        fenetreJeu4x4_classique.AssimilationNom();
     }//GEN-LAST:event_btn_4x4_classiqueActionPerformed
 
     private void btn_4x4_infiniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_4x4_infiniActionPerformed
