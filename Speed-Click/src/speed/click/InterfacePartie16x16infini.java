@@ -4,17 +4,301 @@
  */
 package speed.click;
 
+import javax.swing.JButton;
+
 /**
  *
  * @author daphn
  */
 public class InterfacePartie16x16infini extends javax.swing.JFrame {
 
-    /**
-     * Creates new form InterfacePartie16x16infini
-     */
+JButton [][] celluleGraphique=new JButton [16][16];
+
+
     public InterfacePartie16x16infini() {
         initComponents();
+        
+        
+        
+        
+        
+        
+        celluleGraphique[0][0]=cellule00;
+        celluleGraphique[0][1]=cellule01;
+        celluleGraphique[0][2]=cellule02;
+        celluleGraphique[0][3]=cellule03;
+        celluleGraphique[0][4]=cellule04;
+        celluleGraphique[0][5]=cellule05;
+        celluleGraphique[0][6]=cellule06;
+        celluleGraphique[0][7]=cellule07;
+        celluleGraphique[0][8]=cellule08;
+        celluleGraphique[0][9]=cellule09;
+        celluleGraphique[0][10]=cellule010;
+        celluleGraphique[0][11]=cellule011;
+        celluleGraphique[0][12]=cellule012;
+        celluleGraphique[0][13]=cellule013;
+        celluleGraphique[0][14]=cellule014;
+        celluleGraphique[0][15]=cellule015;
+        
+        celluleGraphique[1][0]=cellule10;
+        celluleGraphique[1][1]=cellule11;
+        celluleGraphique[1][2]=cellule12;
+        celluleGraphique[1][3]=cellule13;
+        celluleGraphique[1][4]=cellule14;
+        celluleGraphique[1][5]=cellule15;
+        celluleGraphique[1][6]=cellule16;
+        celluleGraphique[1][7]=cellule17;
+        celluleGraphique[1][8]=cellule18;
+        celluleGraphique[1][9]=cellule19;
+        celluleGraphique[1][10]=cellule110;
+        celluleGraphique[1][11]=cellule111;
+        celluleGraphique[1][12]=cellule112;
+        celluleGraphique[1][13]=cellule113;
+        celluleGraphique[1][14]=cellule114;
+        celluleGraphique[1][15]=cellule115;
+        
+        
+        celluleGraphique[2][0]=cellule20;
+        celluleGraphique[2][1]=cellule21;
+        celluleGraphique[2][2]=cellule22;
+        celluleGraphique[2][3]=cellule23;
+        celluleGraphique[2][4]=cellule24;
+        celluleGraphique[2][5]=cellule25;
+        celluleGraphique[2][6]=cellule26;
+        celluleGraphique[2][7]=cellule27;
+        celluleGraphique[2][8]=cellule28;
+        celluleGraphique[2][9]=cellule29;
+        celluleGraphique[2][10]=cellule210;
+        celluleGraphique[2][11]=cellule211;
+        celluleGraphique[2][12]=cellule212;
+        celluleGraphique[2][13]=cellule213;
+        celluleGraphique[2][14]=cellule214;
+        celluleGraphique[2][15]=cellule215;
+        
+        
+        celluleGraphique[3][0]=cellule30;
+        celluleGraphique[3][1]=cellule31;
+        celluleGraphique[3][2]=cellule32;
+        celluleGraphique[3][3]=cellule33;
+        celluleGraphique[3][4]=cellule34;
+        celluleGraphique[3][5]=cellule35;
+        celluleGraphique[3][6]=cellule36;
+        celluleGraphique[3][7]=cellule37;
+        celluleGraphique[3][8]=cellule38;
+        celluleGraphique[3][9]=cellule39;
+        celluleGraphique[3][10]=cellule310;
+        celluleGraphique[3][11]=cellule311;
+        celluleGraphique[3][12]=cellule312;
+        celluleGraphique[3][13]=cellule313;
+        celluleGraphique[3][14]=cellule314;
+        celluleGraphique[3][15]=cellule315;
+        
+        
+        
+        celluleGraphique[4][0]=cellule40;
+        celluleGraphique[4][1]=cellule41;
+        celluleGraphique[4][2]=cellule42;
+        celluleGraphique[4][3]=cellule43;
+        celluleGraphique[4][4]=cellule44;
+        celluleGraphique[4][5]=cellule45;
+        celluleGraphique[4][6]=cellule46;
+        celluleGraphique[4][7]=cellule47;
+        celluleGraphique[4][8]=cellule48;
+        celluleGraphique[4][9]=cellule49;
+        celluleGraphique[4][10]=cellule410;
+        celluleGraphique[4][11]=cellule411;
+        celluleGraphique[4][12]=cellule412;
+        celluleGraphique[4][13]=cellule413;
+        celluleGraphique[4][14]=cellule414;
+        celluleGraphique[4][15]=cellule415;
+        
+        celluleGraphique[5][0]=cellule50;
+        celluleGraphique[5][1]=cellule51;
+        celluleGraphique[5][2]=cellule52;
+        celluleGraphique[5][3]=cellule53;
+        celluleGraphique[5][4]=cellule54;
+        celluleGraphique[5][5]=cellule55;
+        celluleGraphique[5][6]=cellule56;
+        celluleGraphique[5][7]=cellule57;
+        celluleGraphique[5][8]=cellule58;
+        celluleGraphique[5][9]=cellule59;
+        celluleGraphique[5][10]=cellule510;
+        celluleGraphique[5][11]=cellule511;
+        celluleGraphique[5][12]=cellule512;
+        celluleGraphique[5][13]=cellule513;
+        celluleGraphique[5][14]=cellule514;
+        celluleGraphique[5][15]=cellule515;
+        
+        celluleGraphique[6][0]=cellule60;
+        celluleGraphique[6][1]=cellule61;
+        celluleGraphique[6][2]=cellule62;
+        celluleGraphique[6][3]=cellule63;
+        celluleGraphique[6][4]=cellule64;
+        celluleGraphique[6][5]=cellule65;
+        celluleGraphique[6][6]=cellule66;
+        celluleGraphique[6][7]=cellule67;
+        celluleGraphique[6][8]=cellule68;
+        celluleGraphique[6][9]=cellule69;
+        celluleGraphique[6][10]=cellule610;
+        celluleGraphique[6][11]=cellule611;
+        celluleGraphique[6][12]=cellule612;
+        celluleGraphique[6][13]=cellule613;
+        celluleGraphique[6][14]=cellule614;
+        celluleGraphique[6][15]=cellule615;
+       
+        celluleGraphique[7][0]=cellule70;
+        celluleGraphique[7][1]=cellule71;
+        celluleGraphique[7][2]=cellule72;
+        celluleGraphique[7][3]=cellule73;
+        celluleGraphique[7][4]=cellule74;
+        celluleGraphique[7][5]=cellule75;
+        celluleGraphique[7][6]=cellule76;
+        celluleGraphique[7][7]=cellule77;
+        celluleGraphique[7][8]=cellule78;
+        celluleGraphique[7][9]=cellule79;
+        celluleGraphique[7][10]=cellule710;
+        celluleGraphique[7][11]=cellule711;
+        celluleGraphique[7][12]=cellule712;
+        celluleGraphique[7][13]=cellule713;
+        celluleGraphique[7][14]=cellule714;
+        celluleGraphique[7][15]=cellule715;
+                
+        celluleGraphique[8][0]=cellule80;
+        celluleGraphique[8][1]=cellule81;
+        celluleGraphique[8][2]=cellule82;
+        celluleGraphique[8][3]=cellule83;
+        celluleGraphique[8][4]=cellule84;
+        celluleGraphique[8][5]=cellule85;
+        celluleGraphique[8][6]=cellule86;
+        celluleGraphique[8][7]=cellule87;
+        celluleGraphique[8][8]=cellule88;
+        celluleGraphique[8][9]=cellule89;
+        celluleGraphique[8][10]=cellule810;
+        celluleGraphique[8][11]=cellule811;
+        celluleGraphique[8][12]=cellule812;
+        celluleGraphique[8][13]=cellule813;
+        celluleGraphique[8][14]=cellule814;
+        celluleGraphique[8][15]=cellule815;
+        
+        celluleGraphique[9][0]=cellule90;
+        celluleGraphique[9][1]=cellule91;
+        celluleGraphique[9][2]=cellule92;
+        celluleGraphique[9][3]=cellule93;
+        celluleGraphique[9][4]=cellule94;
+        celluleGraphique[9][5]=cellule95;
+        celluleGraphique[9][6]=cellule96;
+        celluleGraphique[9][7]=cellule97;
+        celluleGraphique[9][8]=cellule98;
+        celluleGraphique[9][9]=cellule99;
+        celluleGraphique[9][10]=cellule910;
+        celluleGraphique[9][11]=cellule911;
+        celluleGraphique[9][12]=cellule912;
+        celluleGraphique[9][13]=cellule913;
+        celluleGraphique[9][14]=cellule914;
+        celluleGraphique[9][15]=cellule915;
+        
+        celluleGraphique[10][0]=cellule10_0;
+        celluleGraphique[10][1]=cellule10_1;
+        celluleGraphique[10][2]=cellule10_2;
+        celluleGraphique[10][3]=cellule10_3;
+        celluleGraphique[10][4]=cellule10_4;
+        celluleGraphique[10][5]=cellule10_5;
+        celluleGraphique[10][6]=cellule10_6;
+        celluleGraphique[10][7]=cellule10_7;
+        celluleGraphique[10][8]=cellule10_8;
+        celluleGraphique[10][9]=cellule10_9;
+        celluleGraphique[10][10]=cellule10_10;
+        celluleGraphique[10][11]=cellule10_11;
+        celluleGraphique[10][12]=cellule10_12;
+        celluleGraphique[10][13]=cellule10_13;
+        celluleGraphique[10][14]=cellule10_14;
+        celluleGraphique[10][15]=cellule10_15;
+        
+        celluleGraphique[11][0]=cellule11_0;
+        celluleGraphique[11][1]=cellule11_1;
+        celluleGraphique[11][2]=cellule11_2;
+        celluleGraphique[11][3]=cellule11_3;
+        celluleGraphique[11][4]=cellule11_4;
+        celluleGraphique[11][5]=cellule11_5;
+        celluleGraphique[11][6]=cellule11_6;
+        celluleGraphique[11][7]=cellule11_7;
+        celluleGraphique[11][8]=cellule11_8;
+        celluleGraphique[11][9]=cellule11_9;
+        celluleGraphique[11][10]=cellule11_10;
+        celluleGraphique[11][11]=cellule11_11;
+        celluleGraphique[11][12]=cellule11_12;
+        celluleGraphique[11][13]=cellule11_13;
+        celluleGraphique[11][14]=cellule11_14;
+        celluleGraphique[11][15]=cellule11_15;
+        
+        celluleGraphique[12][0]=cellule12_0;
+        celluleGraphique[12][1]=cellule12_1;
+        celluleGraphique[12][2]=cellule12_2;
+        celluleGraphique[12][3]=cellule12_3;
+        celluleGraphique[12][4]=cellule12_4;
+        celluleGraphique[12][5]=cellule12_5;
+        celluleGraphique[12][6]=cellule12_6;
+        celluleGraphique[12][7]=cellule12_7;
+        celluleGraphique[12][8]=cellule12_8;
+        celluleGraphique[12][9]=cellule12_9;
+        celluleGraphique[12][10]=cellule12_10;
+        celluleGraphique[12][11]=cellule12_11;
+        celluleGraphique[12][12]=cellule12_12;
+        celluleGraphique[12][13]=cellule12_13;
+        celluleGraphique[12][14]=cellule12_14;
+        celluleGraphique[12][15]=cellule12_15;
+        
+        celluleGraphique[13][0]=cellule13_0;
+        celluleGraphique[13][1]=cellule13_1;
+        celluleGraphique[13][2]=cellule13_2;
+        celluleGraphique[13][3]=cellule13_3;
+        celluleGraphique[13][4]=cellule13_4;
+        celluleGraphique[13][5]=cellule13_5;
+        celluleGraphique[13][6]=cellule13_6;
+        celluleGraphique[13][7]=cellule13_7;
+        celluleGraphique[13][8]=cellule13_8;
+        celluleGraphique[13][9]=cellule13_9;
+        celluleGraphique[13][10]=cellule13_10;
+        celluleGraphique[13][11]=cellule13_11;
+        celluleGraphique[13][12]=cellule13_12;
+        celluleGraphique[13][13]=cellule13_13;
+        celluleGraphique[13][14]=cellule13_14;
+        celluleGraphique[13][15]=cellule13_15;
+        
+        celluleGraphique[14][0]=cellule14_0;
+        celluleGraphique[14][1]=cellule14_1;
+        celluleGraphique[14][2]=cellule14_2;
+        celluleGraphique[14][3]=cellule14_3;
+        celluleGraphique[14][4]=cellule14_4;
+        celluleGraphique[14][5]=cellule14_5;
+        celluleGraphique[14][6]=cellule14_6;
+        celluleGraphique[14][7]=cellule14_7;
+        celluleGraphique[14][8]=cellule14_8;
+        celluleGraphique[14][9]=cellule14_9;
+        celluleGraphique[14][10]=cellule14_10;
+        celluleGraphique[14][11]=cellule14_11;
+        celluleGraphique[14][12]=cellule14_12;
+        celluleGraphique[14][13]=cellule14_13;
+        celluleGraphique[14][14]=cellule14_14;
+        celluleGraphique[14][15]=cellule14_15;
+        
+        celluleGraphique[15][0]=cellule15_0;
+        celluleGraphique[15][1]=cellule15_1;
+        celluleGraphique[15][2]=cellule15_2;
+        celluleGraphique[15][3]=cellule15_3;
+        celluleGraphique[15][4]=cellule15_4;
+        celluleGraphique[15][5]=cellule15_5;
+        celluleGraphique[15][6]=cellule15_6;
+        celluleGraphique[15][7]=cellule15_7;
+        celluleGraphique[15][8]=cellule15_8;
+        celluleGraphique[15][9]=cellule15_9;
+        celluleGraphique[15][10]=cellule15_10;
+        celluleGraphique[15][11]=cellule15_11;
+        celluleGraphique[15][12]=cellule15_12;
+        celluleGraphique[15][13]=cellule15_13;
+        celluleGraphique[15][14]=cellule15_14;
+        celluleGraphique[15][15]=cellule15_15;
+        
     }
 
     /**
