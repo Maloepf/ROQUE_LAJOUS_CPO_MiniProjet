@@ -86,14 +86,14 @@ public class FenetreDeJeu extends javax.swing.JFrame {
                 cellule01ActionPerformed(evt);
             }
         });
-        grilleJeu_graphique.add(cellule01);
+        grilleJeu_graphique.add(cellule01, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, 300, 300));
 
         cellule10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cellule10ActionPerformed(evt);
             }
         });
-        grilleJeu_graphique.add(cellule10);
+        grilleJeu_graphique.add(cellule10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 300, 300));
 
         cellule11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
