@@ -4,6 +4,8 @@
  */
 package speed.click;
 
+import java.awt.Color;
+import java.util.Random;
 import javax.swing.JButton;
 
 /**
@@ -12,6 +14,12 @@ import javax.swing.JButton;
  */
 public class InterfacePartie16x16infini extends javax.swing.JFrame {
 
+    
+    Cellule [][] CellulesJeu;
+    Grille grilleJeu;
+    String PlayerName;
+    Joueur Player;
+    int Score;   
 JButton [][] celluleGraphique=new JButton [16][16];
 
 
@@ -19,7 +27,17 @@ JButton [][] celluleGraphique=new JButton [16][16];
         initComponents();
         
         
+        Score = 0; //Initialisation du score en début de partit
+        scorejoueur5.setText(""+Score); //Affichage du Score initiale
         
+        grilleJeu= new Grille(2); //Création nouvelle grille
+        
+        CellulesJeu=new Cellule [2][2]; //Création nouvelles cellules
+        for (int l = 0 ; l<2 ; l++){
+            for(int c=0 ; c<2 ; c++){
+                CellulesJeu[l][c]= new Cellule();
+            }
+        }
         
         
         
@@ -299,6 +317,10 @@ JButton [][] celluleGraphique=new JButton [16][16];
         celluleGraphique[15][14]=cellule15_14;
         celluleGraphique[15][15]=cellule15_15;
         
+        
+        
+        allumerCelluleAleat();
+        allumerCelluleAleat_graph();
     }
 
     /**
@@ -573,18 +595,28 @@ JButton [][] celluleGraphique=new JButton [16][16];
         jLabel2 = new javax.swing.JLabel();
         scorejoueur5 = new javax.swing.JLabel();
         nomjoueur5 = new javax.swing.JLabel();
-        recordnomjoueur5 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Panneaugrille_16x16.setBackground(new java.awt.Color(204, 255, 255));
         Panneaugrille_16x16.setLayout(new java.awt.GridLayout(16, 16));
+
+        cellule00.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule00ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule00);
+
+        cellule01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule01ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule01);
 
         cellule02.addActionListener(new java.awt.event.ActionListener() {
@@ -593,14 +625,68 @@ JButton [][] celluleGraphique=new JButton [16][16];
             }
         });
         Panneaugrille_16x16.add(cellule02);
+
+        cellule03.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule03ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule03);
+
+        cellule04.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule04ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule04);
+
+        cellule05.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule05ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule05);
+
+        cellule06.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule06ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule06);
+
+        cellule07.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule07ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule07);
+
+        cellule08.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule08ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule08);
+
+        cellule09.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule09ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule09);
+
+        cellule010.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule010ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule010);
+
+        cellule011.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule011ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule011);
         Panneaugrille_16x16.add(cellule012);
         Panneaugrille_16x16.add(cellule013);
@@ -896,10 +982,6 @@ JButton [][] celluleGraphique=new JButton [16][16];
         nomjoueur5.setText("nomjoueur5");
         infosjoueur2.add(nomjoueur5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 80, 20));
 
-        recordnomjoueur5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        recordnomjoueur5.setText("reccordnomjoueur5");
-        infosjoueur2.add(recordnomjoueur5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 120, 20));
-
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText("Score : ");
         infosjoueur2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 80, 20));
@@ -908,10 +990,6 @@ JButton [][] celluleGraphique=new JButton [16][16];
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel6.setText("Nom : ");
         infosjoueur2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 80, 20));
-
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel7.setText("Reccord : ");
-        infosjoueur2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 80, 20));
 
         getContentPane().add(infosjoueur2, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 250, 310, 250));
 
@@ -923,7 +1001,14 @@ JButton [][] celluleGraphique=new JButton [16][16];
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void cellule02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule02ActionPerformed
-        // TODO add your handling code here:
+if (CellulesJeu[0][2].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(0,2);
+            celluleGraphique[0][2].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+        }        // TODO add your handling code here:
     }//GEN-LAST:event_cellule02ActionPerformed
 
     private void cellule45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule45ActionPerformed
@@ -937,6 +1022,120 @@ JButton [][] celluleGraphique=new JButton [16][16];
     private void cellule711ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule711ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cellule711ActionPerformed
+
+    private void cellule00ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule00ActionPerformed
+if (CellulesJeu[0][0].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(0,0);
+            celluleGraphique[0][0].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule00ActionPerformed
+
+    private void cellule01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule01ActionPerformed
+if (CellulesJeu[0][1].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(0,1);
+            celluleGraphique[0][1].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule01ActionPerformed
+
+    private void cellule03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule03ActionPerformed
+if (CellulesJeu[0][3].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(0,3);
+            celluleGraphique[0][3].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule03ActionPerformed
+
+    private void cellule04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule04ActionPerformed
+if (CellulesJeu[0][4].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(0,4);
+            celluleGraphique[0][4].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule04ActionPerformed
+
+    private void cellule05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule05ActionPerformed
+if (CellulesJeu[0][5].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(0,5);
+            celluleGraphique[0][5].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule05ActionPerformed
+
+    private void cellule06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule06ActionPerformed
+if (CellulesJeu[0][6].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(0,6);
+            celluleGraphique[0][6].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule06ActionPerformed
+
+    private void cellule07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule07ActionPerformed
+if (CellulesJeu[0][7].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(0,7);
+            celluleGraphique[0][7].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule07ActionPerformed
+
+    private void cellule08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule08ActionPerformed
+if (CellulesJeu[0][8].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(0,8);
+            celluleGraphique[0][8].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule08ActionPerformed
+
+    private void cellule09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule09ActionPerformed
+if (CellulesJeu[0][9].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(0,9);
+            celluleGraphique[0][9].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule09ActionPerformed
+
+    private void cellule010ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule010ActionPerformed
+if (CellulesJeu[0][10].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(0,10);
+            celluleGraphique[0][10].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule010ActionPerformed
+
+    private void cellule011ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule011ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule011ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -972,6 +1171,38 @@ JButton [][] celluleGraphique=new JButton [16][16];
             }
         });
     }
+    
+    
+       
+       public void allumerCelluleAleat() {
+        allumerCellule(new Random().nextInt(2),new Random().nextInt(2)); 
+    }
+    
+    
+    public void allumerCelluleAleat_graph(){
+        for (int l =0; l<2; l++){
+            for (int c = 0; c<2; c++){
+                if (CellulesJeu[c][l].EstAllume){ 
+                    celluleGraphique[c][l].setBackground(Color.RED);
+                }
+            }
+        }
+    }
+    
+    public void allumerCellule (int x, int y){
+        CellulesJeu[x][y].allumer();
+    }
+    
+    public void eteindreCellule (int x, int y){
+        CellulesJeu[x][y].eteindre();
+    }
+    
+    public void AssimilationNom(){
+        Player= new Joueur(PlayerName);
+        System.out.println(PlayerName);
+        nomjoueur5.setText(PlayerName);
+   }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Panneaugrille_16x16;
@@ -1235,12 +1466,10 @@ JButton [][] celluleGraphique=new JButton [16][16];
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel nomjoueur5;
     private javax.swing.JPanel panneaumodepartie;
-    private javax.swing.JLabel recordnomjoueur5;
     private javax.swing.JLabel scorejoueur5;
     // End of variables declaration//GEN-END:variables
 }

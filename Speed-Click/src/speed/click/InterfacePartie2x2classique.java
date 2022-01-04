@@ -80,11 +80,9 @@ public class InterfacePartie2x2classique extends JFrame implements ActionListene
         jLabel2 = new javax.swing.JLabel();
         scorejoueur = new javax.swing.JLabel();
         nomjoueur = new javax.swing.JLabel();
-        recordnomjoueur2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         panneaumodepartie = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
         grilleJeu_graphique = new javax.swing.JPanel();
@@ -127,10 +125,6 @@ public class InterfacePartie2x2classique extends JFrame implements ActionListene
         nomjoueur.setText("nomjoueur2");
         infosjoueur2.add(nomjoueur, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 80, 20));
 
-        recordnomjoueur2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        recordnomjoueur2.setText("reccordnomjoueur2");
-        infosjoueur2.add(recordnomjoueur2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 120, 20));
-
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText("Score : ");
         infosjoueur2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 80, 20));
@@ -139,10 +133,6 @@ public class InterfacePartie2x2classique extends JFrame implements ActionListene
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel6.setText("Nom : ");
         infosjoueur2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 80, 20));
-
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel7.setText("Reccord : ");
-        infosjoueur2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 80, 20));
 
         getContentPane().add(infosjoueur2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 320, 310, 250));
 
@@ -395,12 +385,10 @@ public class InterfacePartie2x2classique extends JFrame implements ActionListene
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel nomjoueur;
     private javax.swing.JPanel panneaumodepartie;
-    private javax.swing.JLabel recordnomjoueur2;
     private javax.swing.JLabel scorejoueur;
     // End of variables declaration//GEN-END:variables
 }

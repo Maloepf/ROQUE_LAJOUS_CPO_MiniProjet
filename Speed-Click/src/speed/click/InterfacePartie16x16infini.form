@@ -43,8 +43,14 @@
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JButton" name="cellule00">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cellule00ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="cellule01">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cellule01ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="cellule02">
           <Events>
@@ -52,22 +58,49 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="cellule03">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cellule03ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="cellule04">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cellule04ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="cellule05">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cellule05ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="cellule06">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cellule06ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="cellule07">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cellule07ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="cellule08">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cellule08ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="cellule09">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cellule09ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="cellule010">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cellule010ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="cellule011">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cellule011ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="cellule012">
         </Component>
@@ -657,19 +690,6 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JLabel" name="recordnomjoueur5">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="14" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="reccordnomjoueur5"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="130" y="170" width="120" height="20"/>
-            </Constraint>
-          </Constraints>
-        </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -700,19 +720,6 @@
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="10" y="50" width="80" height="20"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel7">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="14" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Reccord : "/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="10" y="170" width="80" height="20"/>
             </Constraint>
           </Constraints>
         </Component>
