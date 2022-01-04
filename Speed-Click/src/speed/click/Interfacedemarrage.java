@@ -5,17 +5,17 @@ import javax.swing.JFrame;
 
 public class Interfacedemarrage extends javax.swing.JFrame {
 
-    static String nomDuJoueur;
+     String nomDuJoueur;
 
     public Interfacedemarrage() {
         initComponents();
-        nomDuJoueur = entrezpeudo.getText();
+        
     }
     
-    static String getnomDuJoueur(){
+    public String getnomDuJoueur(){
         return nomDuJoueur;
     }
-    FenetreDeJeu fenetreJeu2x2_infini = new FenetreDeJeu();
+    
     InterfacePartie2x2classique fenetreJeu2x2_classique = new InterfacePartie2x2classique();
     InterfacePartie4x4infinie fenetreJeu4x4_infini = new InterfacePartie4x4infinie();
     InterfacePartie4x4classique fenetreJeu4x4_classique = new InterfacePartie4x4classique();
@@ -27,7 +27,6 @@ public class Interfacedemarrage extends javax.swing.JFrame {
 
         btn_16x16_infini = new javax.swing.JPanel();
         entrezpeudo = new javax.swing.JTextField();
-        jScrollBar1 = new javax.swing.JScrollBar();
         pseudo = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         partie = new javax.swing.JLabel();
@@ -54,7 +53,6 @@ public class Interfacedemarrage extends javax.swing.JFrame {
             }
         });
         btn_16x16_infini.add(entrezpeudo, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 90, 240, 40));
-        btn_16x16_infini.add(jScrollBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 90, -1, 40));
 
         pseudo.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         pseudo.setText(" Entrez votre PSEUDO : ");
@@ -135,8 +133,12 @@ public class Interfacedemarrage extends javax.swing.JFrame {
     }//GEN-LAST:event_entrezpeudoActionPerformed
 
     private void btn_2x2_infiniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2x2_infiniActionPerformed
+        FenetreDeJeu fenetreJeu2x2_infini = new FenetreDeJeu();
         fenetreJeu2x2_infini.setVisible(true);
         fenetreJeu2x2_infini.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        nomDuJoueur = entrezpeudo.getText();
+        fenetreJeu2x2_infini.PlayerName=nomDuJoueur;
+        fenetreJeu2x2_infini.AssimilationNom();
     }//GEN-LAST:event_btn_2x2_infiniActionPerformed
 
     private void btn_2x2_classique1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2x2_classique1ActionPerformed
@@ -211,7 +213,6 @@ public class Interfacedemarrage extends javax.swing.JFrame {
     private javax.swing.JButton btn_4x4_classique;
     private javax.swing.JButton btn_4x4_infini;
     private javax.swing.JTextField entrezpeudo;
-    private javax.swing.JScrollBar jScrollBar1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel partie;
     private javax.swing.JLabel partie16x16;

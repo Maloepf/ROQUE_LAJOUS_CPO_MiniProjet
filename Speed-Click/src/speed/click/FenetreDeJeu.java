@@ -14,7 +14,8 @@ public class FenetreDeJeu extends javax.swing.JFrame {
 
     Cellule [][] CellulesJeu;
     Grille grilleJeu;
-    Joueur joueurCourant;
+    Joueur Player;
+    String PlayerName;
     int Score;
     JButton [][] celluleGraphique=new JButton [2][2];
     
@@ -23,12 +24,11 @@ public class FenetreDeJeu extends javax.swing.JFrame {
 
     public FenetreDeJeu() {
         initComponents();
-        String playerName=Interfacedemarrage.getnomDuJoueur();
-        nomjoueur.setText(playerName);
-
-        Score = 0;
-        grilleJeu= new Grille(2);
         
+        Score = 0;
+        scorejoueur1.setText(""+Score);
+        
+        grilleJeu= new Grille(2);
         
         CellulesJeu=new Cellule [2][2];
         for (int l = 0 ; l<2 ; l++){
@@ -37,7 +37,7 @@ public class FenetreDeJeu extends javax.swing.JFrame {
             }
         }
         
-        celluleGraphique[0][0]=cellule11;
+        celluleGraphique[0][0]=cellule00;
         celluleGraphique[0][1]=cellule12;
         celluleGraphique[1][0]=cellule21;
         celluleGraphique[1][1]=cellule22;
@@ -51,7 +51,7 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     private void initComponents() {
 
         grilleJeu_graphique = new javax.swing.JPanel();
-        cellule11 = new javax.swing.JButton();
+        cellule00 = new javax.swing.JButton();
         cellule12 = new javax.swing.JButton();
         cellule21 = new javax.swing.JButton();
         cellule22 = new javax.swing.JButton();
@@ -74,12 +74,12 @@ public class FenetreDeJeu extends javax.swing.JFrame {
         grilleJeu_graphique.setPreferredSize(new java.awt.Dimension(520, 520));
         grilleJeu_graphique.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        cellule11.addActionListener(new java.awt.event.ActionListener() {
+        cellule00.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cellule11ActionPerformed(evt);
+                cellule00ActionPerformed(evt);
             }
         });
-        grilleJeu_graphique.add(cellule11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 300, 300));
+        grilleJeu_graphique.add(cellule00, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 300, 300));
 
         cellule12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -155,17 +155,21 @@ public class FenetreDeJeu extends javax.swing.JFrame {
         setBounds(0, 0, 1077, 771);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void cellule11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11ActionPerformed
+    private void cellule00ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule00ActionPerformed
         if (CellulesJeu[0][0].EstAllume){ 
+            Score++;
+            scorejoueur1.setText(""+Score);
             eteindreCellule(0,0);
             celluleGraphique[0][0].setBackground(Color.lightGray);
             allumerCelluleAleat();
             allumerCelluleAleat_graph();
         }          
-    }//GEN-LAST:event_cellule11ActionPerformed
+    }//GEN-LAST:event_cellule00ActionPerformed
 
     private void cellule21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule21ActionPerformed
         if (CellulesJeu[1][0].EstAllume){ 
+            Score++;
+            scorejoueur1.setText(""+Score);
             eteindreCellule(1,0);
             celluleGraphique[1][0].setBackground(Color.lightGray);
             allumerCelluleAleat();
@@ -175,6 +179,8 @@ public class FenetreDeJeu extends javax.swing.JFrame {
 
     private void cellule12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12ActionPerformed
         if (CellulesJeu[0][1].EstAllume){ 
+            Score++;
+            scorejoueur1.setText(""+Score);
             eteindreCellule(0,1);
             celluleGraphique[0][1].setBackground(Color.lightGray);
             allumerCelluleAleat();
@@ -184,6 +190,8 @@ public class FenetreDeJeu extends javax.swing.JFrame {
 
     private void cellule22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule22ActionPerformed
         if (CellulesJeu[1][1].EstAllume){ 
+            Score++;
+            scorejoueur1.setText(""+Score);
             eteindreCellule(1,1);
             celluleGraphique[1][1].setBackground(Color.lightGray);
             allumerCelluleAleat();
@@ -250,7 +258,11 @@ public class FenetreDeJeu extends javax.swing.JFrame {
         CellulesJeu[x][y].eteindre();
     }
     
-
+    public void AssimilationNom(){
+        Player= new Joueur(PlayerName);
+        System.out.println(PlayerName);
+        nomjoueur.setText(PlayerName);
+   }
 
 
    
@@ -263,7 +275,7 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Nom;
     private javax.swing.JLabel Record;
-    private javax.swing.JButton cellule11;
+    private javax.swing.JButton cellule00;
     private javax.swing.JButton cellule12;
     private javax.swing.JButton cellule21;
     private javax.swing.JButton cellule22;
