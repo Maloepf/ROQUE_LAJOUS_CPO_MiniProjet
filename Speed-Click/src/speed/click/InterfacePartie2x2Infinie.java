@@ -20,7 +20,7 @@ public class InterfacePartie2x2Infinie extends JFrame{
     String PlayerName;
     Joueur Player;
     int Score;
-    int TempsDeJeu;
+
     JButton [][] celluleGraphique=new JButton [2][2];
 
     public InterfacePartie2x2Infinie() {
