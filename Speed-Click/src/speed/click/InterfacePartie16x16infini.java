@@ -1871,80 +1871,530 @@ JButton [][] celluleGraphique=new JButton [16][16];
             }
         });
         Panneaugrille_16x16.add(cellule11_4);
+
+        cellule11_5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule11_5ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule11_5);
+
+        cellule11_6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule11_6ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule11_6);
+
+        cellule11_7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule11_7ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule11_7);
+
+        cellule11_8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule11_8ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule11_8);
+
+        cellule11_9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule11_9ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule11_9);
+
+        cellule11_10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule11_10ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule11_10);
+
+        cellule11_11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule11_11ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule11_11);
+
+        cellule11_12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule11_12ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule11_12);
+
+        cellule11_13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule11_13ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule11_13);
+
+        cellule11_14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule11_14ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule11_14);
+
+        cellule11_15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule11_15ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule11_15);
+
+        cellule12_0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule12_0ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule12_0);
+
+        cellule12_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule12_1ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule12_1);
+
+        cellule12_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule12_2ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule12_2);
+
+        cellule12_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule12_3ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule12_3);
+
+        cellule12_4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule12_4ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule12_4);
+
+        cellule12_5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule12_5ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule12_5);
+
+        cellule12_6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule12_6ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule12_6);
+
+        cellule12_7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule12_7ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule12_7);
+
+        cellule12_8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule12_8ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule12_8);
+
+        cellule12_9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule12_9ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule12_9);
+
+        cellule12_10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule12_10ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule12_10);
+
+        cellule12_11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule12_11ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule12_11);
+
+        cellule12_12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule12_12ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule12_12);
+
+        cellule12_13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule12_13ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule12_13);
+
+        cellule12_14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule12_14ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule12_14);
+
+        cellule12_15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule12_15ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule12_15);
+
+        cellule13_0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule13_0ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule13_0);
+
+        cellule13_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule13_1ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule13_1);
+
+        cellule13_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule13_2ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule13_2);
+
+        cellule13_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule13_3ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule13_3);
+
+        cellule13_4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule13_4ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule13_4);
+
+        cellule13_5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule13_5ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule13_5);
+
+        cellule13_6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule13_6ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule13_6);
+
+        cellule13_7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule13_7ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule13_7);
+
+        cellule13_8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule13_8ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule13_8);
+
+        cellule13_9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule13_9ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule13_9);
+
+        cellule13_10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule13_10ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule13_10);
+
+        cellule13_11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule13_11ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule13_11);
+
+        cellule13_12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule13_12ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule13_12);
+
+        cellule13_13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule13_13ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule13_13);
+
+        cellule13_14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule13_14ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule13_14);
+
+        cellule13_15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule13_15ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule13_15);
+
+        cellule14_0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule14_0ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule14_0);
+
+        cellule14_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule14_1ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule14_1);
+
+        cellule14_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule14_2ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule14_2);
+
+        cellule14_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule14_3ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule14_3);
+
+        cellule14_4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule14_4ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule14_4);
+
+        cellule14_5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule14_5ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule14_5);
+
+        cellule14_6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule14_6ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule14_6);
+
+        cellule14_7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule14_7ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule14_7);
+
+        cellule14_8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule14_8ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule14_8);
+
+        cellule14_9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule14_9ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule14_9);
+
+        cellule14_10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule14_10ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule14_10);
+
+        cellule14_11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule14_11ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule14_11);
+
+        cellule14_12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule14_12ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule14_12);
+
+        cellule14_13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule14_13ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule14_13);
+
+        cellule14_14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule14_14ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule14_14);
+
+        cellule14_15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule14_15ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule14_15);
+
+        cellule15_0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule15_0ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule15_0);
+
+        cellule15_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule15_1ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule15_1);
+
+        cellule15_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule15_2ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule15_2);
+
+        cellule15_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule15_3ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule15_3);
+
+        cellule15_4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule15_4ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule15_4);
+
+        cellule15_5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule15_5ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule15_5);
+
+        cellule15_6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule15_6ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule15_6);
+
+        cellule15_7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule15_7ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule15_7);
+
+        cellule15_8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule15_8ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule15_8);
+
+        cellule15_9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule15_9ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule15_9);
+
+        cellule15_10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule15_10ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule15_10);
+
+        cellule15_11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule15_11ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule15_11);
+
+        cellule15_12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule15_12ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule15_12);
+
+        cellule15_13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule15_13ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule15_13);
+
+        cellule15_14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule15_14ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule15_14);
+
+        cellule15_15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule15_15ActionPerformed(evt);
+            }
+        });
         Panneaugrille_16x16.add(cellule15_15);
 
         getContentPane().add(Panneaugrille_16x16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 700, 700));
@@ -3950,17 +4400,19 @@ if (CellulesJeu[6][15].EstAllume){
             eteindreCellule(11,1);
             celluleGraphique[11][1].setBackground(Color.lightGray);
             allumerCelluleAleat();
-            allumerCelluleAleat_graph();        // TODO add your handling code here:
+            allumerCelluleAleat_graph();   
+     }// TODO add your handling code here:
     }//GEN-LAST:event_cellule11_1ActionPerformed
 
     private void cellule11_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11_2ActionPerformed
-             if (CellulesJeu[11][2].EstAllume){
+     if (CellulesJeu[11][0].EstAllume){
             Score++;
             scorejoueur5.setText(""+Score);
-            eteindreCellule(11,2);
-            celluleGraphique[11][2].setBackground(Color.lightGray);
+            eteindreCellule(11,0);
+            celluleGraphique[11][0].setBackground(Color.lightGray);
             allumerCelluleAleat();
             allumerCelluleAleat_graph();
+     }
     }//GEN-LAST:event_cellule11_2ActionPerformed
 
     private void cellule11_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11_3ActionPerformed
@@ -3970,12 +4422,845 @@ if (CellulesJeu[6][15].EstAllume){
             eteindreCellule(11,3);
             celluleGraphique[11][3].setBackground(Color.lightGray);
             allumerCelluleAleat();
-            allumerCelluleAleat_graph();        // TODO add your handling code here:
+            allumerCelluleAleat_graph();
+     }// TODO add your handling code here:
     }//GEN-LAST:event_cellule11_3ActionPerformed
 
     private void cellule11_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11_4ActionPerformed
-        // TODO add your handling code here:
+            if (CellulesJeu[11][4].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(11,4);
+            celluleGraphique[11][4].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+            }// TODO add your handling code here:
     }//GEN-LAST:event_cellule11_4ActionPerformed
+
+    private void cellule13_9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule13_9ActionPerformed
+    if (CellulesJeu[13][9].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(13,9);
+            celluleGraphique[13][9].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }           // TODO add your handling code here:
+    }//GEN-LAST:event_cellule13_9ActionPerformed
+
+    private void cellule11_8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11_8ActionPerformed
+     if (CellulesJeu[11][8].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(11,8);
+            celluleGraphique[11][8].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule11_8ActionPerformed
+
+    private void cellule11_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11_7ActionPerformed
+     if (CellulesJeu[11][7].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(11,7);
+            celluleGraphique[11][7].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule11_7ActionPerformed
+
+    private void cellule11_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11_6ActionPerformed
+            if (CellulesJeu[11][6].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(11,6);
+            celluleGraphique[11][6].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     } // TODO add your handling code here:
+    }//GEN-LAST:event_cellule11_6ActionPerformed
+
+    private void cellule11_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11_5ActionPerformed
+             if (CellulesJeu[11][5].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(11,5);
+            celluleGraphique[11][5].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+             }// TODO add your handling code here:
+    }//GEN-LAST:event_cellule11_5ActionPerformed
+
+    private void cellule11_9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11_9ActionPerformed
+     if (CellulesJeu[11][9].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(11,9);
+            celluleGraphique[11][9].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule11_9ActionPerformed
+
+    private void cellule11_10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11_10ActionPerformed
+     if (CellulesJeu[11][10].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(11,10);
+            celluleGraphique[11][10].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule11_10ActionPerformed
+
+    private void cellule11_11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11_11ActionPerformed
+             if (CellulesJeu[11][11].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(11,11);
+            celluleGraphique[11][11].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }// TODO add your handling code here:
+    }//GEN-LAST:event_cellule11_11ActionPerformed
+
+    private void cellule11_12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11_12ActionPerformed
+     if (CellulesJeu[11][12].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(11,12);
+            celluleGraphique[11][12].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule11_12ActionPerformed
+
+    private void cellule11_13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11_13ActionPerformed
+     if (CellulesJeu[11][13].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(11,13);
+            celluleGraphique[11][13].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule11_13ActionPerformed
+
+    private void cellule11_14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11_14ActionPerformed
+     if (CellulesJeu[11][14].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(11,14);
+            celluleGraphique[11][14].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule11_14ActionPerformed
+
+    private void cellule11_15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11_15ActionPerformed
+     if (CellulesJeu[11][15].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(11,15);
+            celluleGraphique[11][15].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule11_15ActionPerformed
+
+    private void cellule12_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12_0ActionPerformed
+     if (CellulesJeu[12][0].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(12,0);
+            celluleGraphique[12][0].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule12_0ActionPerformed
+
+    private void cellule12_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12_1ActionPerformed
+     if (CellulesJeu[12][1].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(12,1);
+            celluleGraphique[12][1].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule12_1ActionPerformed
+
+    private void cellule12_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12_2ActionPerformed
+     if (CellulesJeu[12][2].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(12,2);
+            celluleGraphique[12][2].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule12_2ActionPerformed
+
+    private void cellule12_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12_3ActionPerformed
+     if (CellulesJeu[12][3].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(12,3);
+            celluleGraphique[12][3].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule12_3ActionPerformed
+
+    private void cellule12_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12_4ActionPerformed
+     if (CellulesJeu[12][4].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(12,4);
+            celluleGraphique[12][4].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule12_4ActionPerformed
+
+    private void cellule12_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12_5ActionPerformed
+     if (CellulesJeu[12][5].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(12,5);
+            celluleGraphique[12][5].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule12_5ActionPerformed
+
+    private void cellule12_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12_6ActionPerformed
+     if (CellulesJeu[12][6].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(12,6);
+            celluleGraphique[12][6].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule12_6ActionPerformed
+
+    private void cellule12_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12_7ActionPerformed
+     if (CellulesJeu[12][7].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(12,7);
+            celluleGraphique[12][7].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule12_7ActionPerformed
+
+    private void cellule12_8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12_8ActionPerformed
+     if (CellulesJeu[12][8].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(12,8);
+            celluleGraphique[12][8].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule12_8ActionPerformed
+
+    private void cellule12_9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12_9ActionPerformed
+     if (CellulesJeu[12][9].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(12,9);
+            celluleGraphique[12][9].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule12_9ActionPerformed
+
+    private void cellule12_10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12_10ActionPerformed
+     if (CellulesJeu[12][10].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(12,10);
+            celluleGraphique[12][10].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule12_10ActionPerformed
+
+    private void cellule12_11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12_11ActionPerformed
+     if (CellulesJeu[12][11].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(12,11);
+            celluleGraphique[12][11].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule12_11ActionPerformed
+
+    private void cellule12_12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12_12ActionPerformed
+     if (CellulesJeu[12][12].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(12,12);
+            celluleGraphique[12][12].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule12_12ActionPerformed
+
+    private void cellule12_13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12_13ActionPerformed
+     if (CellulesJeu[12][13].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(12,13);
+            celluleGraphique[12][13].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule12_13ActionPerformed
+
+    private void cellule12_14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12_14ActionPerformed
+     if (CellulesJeu[12][14].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(12,14);
+            celluleGraphique[12][14].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule12_14ActionPerformed
+
+    private void cellule12_15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12_15ActionPerformed
+     if (CellulesJeu[12][15].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(12,15);
+            celluleGraphique[12][15].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule12_15ActionPerformed
+
+    private void cellule13_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule13_0ActionPerformed
+     if (CellulesJeu[13][0].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(13,0);
+            celluleGraphique[13][0].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }        // TODO add your handling code here:
+    }//GEN-LAST:event_cellule13_0ActionPerformed
+
+    private void cellule13_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule13_1ActionPerformed
+    if (CellulesJeu[13][1].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(13,1);
+            celluleGraphique[13][1].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }           // TODO add your handling code here:
+    }//GEN-LAST:event_cellule13_1ActionPerformed
+
+    private void cellule13_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule13_2ActionPerformed
+    if (CellulesJeu[13][2].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(13,2);
+            celluleGraphique[13][2].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }           // TODO add your handling code here:
+    }//GEN-LAST:event_cellule13_2ActionPerformed
+
+    private void cellule13_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule13_3ActionPerformed
+    if (CellulesJeu[13][3].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(13,3);
+            celluleGraphique[13][3].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }           // TODO add your handling code here:
+    }//GEN-LAST:event_cellule13_3ActionPerformed
+
+    private void cellule13_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule13_4ActionPerformed
+    if (CellulesJeu[13][4].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(13,4);
+            celluleGraphique[13][4].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }           // TODO add your handling code here:
+    }//GEN-LAST:event_cellule13_4ActionPerformed
+
+    private void cellule13_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule13_5ActionPerformed
+    if (CellulesJeu[13][5].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(13,5);
+            celluleGraphique[13][5].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }           // TODO add your handling code here:
+    }//GEN-LAST:event_cellule13_5ActionPerformed
+
+    private void cellule13_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule13_6ActionPerformed
+    if (CellulesJeu[13][6].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(13,6);
+            celluleGraphique[13][6].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }           // TODO add your handling code here:
+    }//GEN-LAST:event_cellule13_6ActionPerformed
+
+    private void cellule13_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule13_7ActionPerformed
+    if (CellulesJeu[13][7].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(13,7);
+            celluleGraphique[13][7].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }           // TODO add your handling code here:
+    }//GEN-LAST:event_cellule13_7ActionPerformed
+
+    private void cellule13_8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule13_8ActionPerformed
+    if (CellulesJeu[13][8].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(13,8);
+            celluleGraphique[13][8].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }           // TODO add your handling code here:
+    }//GEN-LAST:event_cellule13_8ActionPerformed
+
+    private void cellule13_10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule13_10ActionPerformed
+    if (CellulesJeu[13][10].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(13,10);
+            celluleGraphique[13][10].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }           // TODO add your handling code here:
+    }//GEN-LAST:event_cellule13_10ActionPerformed
+
+    private void cellule13_11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule13_11ActionPerformed
+    if (CellulesJeu[13][11].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(13,11);
+            celluleGraphique[13][11].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }           // TODO add your handling code here:
+    }//GEN-LAST:event_cellule13_11ActionPerformed
+
+    private void cellule13_12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule13_12ActionPerformed
+    if (CellulesJeu[13][12].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(13,12);
+            celluleGraphique[13][12].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }           // TODO add your handling code here:
+    }//GEN-LAST:event_cellule13_12ActionPerformed
+
+    private void cellule13_13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule13_13ActionPerformed
+    if (CellulesJeu[13][13].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(13,13);
+            celluleGraphique[13][13].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }           // TODO add your handling code here:
+    }//GEN-LAST:event_cellule13_13ActionPerformed
+
+    private void cellule13_14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule13_14ActionPerformed
+    if (CellulesJeu[13][14].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(13,14);
+            celluleGraphique[13][14].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }           // TODO add your handling code here:
+    }//GEN-LAST:event_cellule13_14ActionPerformed
+
+    private void cellule13_15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule13_15ActionPerformed
+    if (CellulesJeu[13][15].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(13,15);
+            celluleGraphique[13][15].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }           // TODO add your handling code here:
+    }//GEN-LAST:event_cellule13_15ActionPerformed
+
+    private void cellule14_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule14_0ActionPerformed
+    if (CellulesJeu[14][0].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(14,0);
+            celluleGraphique[14][0].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }           // TODO add your handling code here:
+    }//GEN-LAST:event_cellule14_0ActionPerformed
+
+    private void cellule14_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule14_1ActionPerformed
+    if (CellulesJeu[14][1].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(14,1);
+            celluleGraphique[14][1].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }            // TODO add your handling code here:
+    }//GEN-LAST:event_cellule14_1ActionPerformed
+
+    private void cellule14_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule14_2ActionPerformed
+    if (CellulesJeu[14][2].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(14,2);
+            celluleGraphique[14][2].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }            // TODO add your handling code here:
+    }//GEN-LAST:event_cellule14_2ActionPerformed
+
+    private void cellule14_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule14_3ActionPerformed
+    if (CellulesJeu[14][3].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(14,3);
+            celluleGraphique[14][3].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }            // TODO add your handling code here:
+    }//GEN-LAST:event_cellule14_3ActionPerformed
+
+    private void cellule14_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule14_4ActionPerformed
+    if (CellulesJeu[14][4].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(14,4);
+            celluleGraphique[14][4].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }            // TODO add your handling code here:
+    }//GEN-LAST:event_cellule14_4ActionPerformed
+
+    private void cellule14_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule14_5ActionPerformed
+    if (CellulesJeu[14][5].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(14,5);
+            celluleGraphique[14][5].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }            // TODO add your handling code here:
+    }//GEN-LAST:event_cellule14_5ActionPerformed
+
+    private void cellule14_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule14_6ActionPerformed
+    if (CellulesJeu[14][6].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(14,6);
+            celluleGraphique[14][6].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }            // TODO add your handling code here:
+    }//GEN-LAST:event_cellule14_6ActionPerformed
+
+    private void cellule14_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule14_7ActionPerformed
+    if (CellulesJeu[14][7].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(14,7);
+            celluleGraphique[14][7].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }            // TODO add your handling code here:
+    }//GEN-LAST:event_cellule14_7ActionPerformed
+
+    private void cellule14_8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule14_8ActionPerformed
+    if (CellulesJeu[14][8].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(14,8);
+            celluleGraphique[14][8].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }            // TODO add your handling code here:
+    }//GEN-LAST:event_cellule14_8ActionPerformed
+
+    private void cellule14_9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule14_9ActionPerformed
+    if (CellulesJeu[14][9].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(14,9);
+            celluleGraphique[14][9].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }            // TODO add your handling code here:
+    }//GEN-LAST:event_cellule14_9ActionPerformed
+
+    private void cellule14_10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule14_10ActionPerformed
+    if (CellulesJeu[14][10].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(14,10);
+            celluleGraphique[14][10].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }            // TODO add your handling code here:
+    }//GEN-LAST:event_cellule14_10ActionPerformed
+
+    private void cellule14_11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule14_11ActionPerformed
+    if (CellulesJeu[14][11].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(14,11);
+            celluleGraphique[14][11].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }            // TODO add your handling code here:
+    }//GEN-LAST:event_cellule14_11ActionPerformed
+
+    private void cellule14_12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule14_12ActionPerformed
+    if (CellulesJeu[14][12].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(14,12);
+            celluleGraphique[14][12].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }            // TODO add your handling code here:
+    }//GEN-LAST:event_cellule14_12ActionPerformed
+
+    private void cellule14_13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule14_13ActionPerformed
+    if (CellulesJeu[14][13].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(14,13);
+            celluleGraphique[14][13].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }            // TODO add your handling code here:
+    }//GEN-LAST:event_cellule14_13ActionPerformed
+
+    private void cellule14_14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule14_14ActionPerformed
+    if (CellulesJeu[14][14].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(14,14);
+            celluleGraphique[14][14].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }            // TODO add your handling code here:
+    }//GEN-LAST:event_cellule14_14ActionPerformed
+
+    private void cellule14_15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule14_15ActionPerformed
+    if (CellulesJeu[14][15].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(14,15);
+            celluleGraphique[14][15].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }            // TODO add your handling code here:
+    }//GEN-LAST:event_cellule14_15ActionPerformed
+
+    private void cellule15_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule15_0ActionPerformed
+    if (CellulesJeu[15][0].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(15,0);
+            celluleGraphique[15][0].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }            // TODO add your handling code here:
+    }//GEN-LAST:event_cellule15_0ActionPerformed
+
+    private void cellule15_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule15_1ActionPerformed
+    if (CellulesJeu[15][1].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(15,1);
+            celluleGraphique[15][1].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }         // TODO add your handling code here:
+    }//GEN-LAST:event_cellule15_1ActionPerformed
+
+    private void cellule15_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule15_2ActionPerformed
+    if (CellulesJeu[15][2].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(15,2);
+            celluleGraphique[15][2].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }         // TODO add your handling code here:
+    }//GEN-LAST:event_cellule15_2ActionPerformed
+
+    private void cellule15_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule15_3ActionPerformed
+    if (CellulesJeu[15][3].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(15,3);
+            celluleGraphique[15][3].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }         // TODO add your handling code here:
+    }//GEN-LAST:event_cellule15_3ActionPerformed
+
+    private void cellule15_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule15_4ActionPerformed
+    if (CellulesJeu[15][4].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(15,4);
+            celluleGraphique[15][4].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }         // TODO add your handling code here:
+    }//GEN-LAST:event_cellule15_4ActionPerformed
+
+    private void cellule15_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule15_5ActionPerformed
+    if (CellulesJeu[15][5].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(15,5);
+            celluleGraphique[15][5].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }         // TODO add your handling code here:
+    }//GEN-LAST:event_cellule15_5ActionPerformed
+
+    private void cellule15_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule15_6ActionPerformed
+    if (CellulesJeu[15][6].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(15,6);
+            celluleGraphique[15][6].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }         // TODO add your handling code here:
+    }//GEN-LAST:event_cellule15_6ActionPerformed
+
+    private void cellule15_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule15_7ActionPerformed
+    if (CellulesJeu[15][7].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(15,7);
+            celluleGraphique[15][7].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }         // TODO add your handling code here:
+    }//GEN-LAST:event_cellule15_7ActionPerformed
+
+    private void cellule15_8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule15_8ActionPerformed
+    if (CellulesJeu[15][8].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(15,8);
+            celluleGraphique[15][8].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }         // TODO add your handling code here:
+    }//GEN-LAST:event_cellule15_8ActionPerformed
+
+    private void cellule15_9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule15_9ActionPerformed
+    if (CellulesJeu[15][9].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(15,9);
+            celluleGraphique[15][9].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }         // TODO add your handling code here:
+    }//GEN-LAST:event_cellule15_9ActionPerformed
+
+    private void cellule15_10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule15_10ActionPerformed
+    if (CellulesJeu[15][10].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(15,10);
+            celluleGraphique[15][10].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }         // TODO add your handling code here:
+    }//GEN-LAST:event_cellule15_10ActionPerformed
+
+    private void cellule15_11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule15_11ActionPerformed
+    if (CellulesJeu[15][11].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(15,11);
+            celluleGraphique[15][11].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }         // TODO add your handling code here:
+    }//GEN-LAST:event_cellule15_11ActionPerformed
+
+    private void cellule15_12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule15_12ActionPerformed
+    if (CellulesJeu[15][12].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(15,12);
+            celluleGraphique[15][12].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }         // TODO add your handling code here:
+    }//GEN-LAST:event_cellule15_12ActionPerformed
+
+    private void cellule15_13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule15_13ActionPerformed
+    if (CellulesJeu[15][13].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(15,13);
+            celluleGraphique[15][13].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }         // TODO add your handling code here:
+    }//GEN-LAST:event_cellule15_13ActionPerformed
+
+    private void cellule15_14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule15_14ActionPerformed
+    if (CellulesJeu[15][14].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(15,14);
+            celluleGraphique[15][14].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }         // TODO add your handling code here:
+    }//GEN-LAST:event_cellule15_14ActionPerformed
+
+    private void cellule15_15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule15_15ActionPerformed
+    if (CellulesJeu[15][15].EstAllume){
+            Score++;
+            scorejoueur5.setText(""+Score);
+            eteindreCellule(15,15);
+            celluleGraphique[15][15].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();   
+     }         // TODO add your handling code here:
+    }//GEN-LAST:event_cellule15_15ActionPerformed
 
     /**
      * @param args the command line arguments
