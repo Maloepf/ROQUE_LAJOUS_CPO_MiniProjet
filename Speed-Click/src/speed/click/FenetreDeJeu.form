@@ -65,7 +65,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="cellule11">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cellule00ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cellule11ActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
@@ -99,7 +99,7 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JLabel" name="scorejoueur1">
+        <Component class="javax.swing.JLabel" name="scorejoueur">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="14" style="0"/>

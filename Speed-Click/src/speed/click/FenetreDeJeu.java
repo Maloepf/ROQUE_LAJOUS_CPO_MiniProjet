@@ -1,5 +1,5 @@
 /*
-    Fenêtre de Jeu
+    2x2 Infinie
     Mini-Projet : Speed-Click
     ROQUE Daphné & LAJOUS Malô
     Décembre 2021
@@ -18,15 +18,12 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     String PlayerName;
     int Score;
     JButton [][] celluleGraphique=new JButton [2][2];
-    
-
-    
 
     public FenetreDeJeu() {
         initComponents();
         
         Score = 0;
-        scorejoueur1.setText(""+Score);
+        scorejoueur.setText(""+Score);
         
         grilleJeu= new Grille(2);
         
@@ -57,7 +54,7 @@ public class FenetreDeJeu extends javax.swing.JFrame {
         cellule11 = new javax.swing.JButton();
         infosjoueur = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        scorejoueur1 = new javax.swing.JLabel();
+        scorejoueur = new javax.swing.JLabel();
         nomjoueur = new javax.swing.JLabel();
         recordnomjoueur1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -86,18 +83,18 @@ public class FenetreDeJeu extends javax.swing.JFrame {
                 cellule01ActionPerformed(evt);
             }
         });
-        grilleJeu_graphique.add(cellule01, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, 300, 300));
+        grilleJeu_graphique.add(cellule01);
 
         cellule10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cellule10ActionPerformed(evt);
             }
         });
-        grilleJeu_graphique.add(cellule10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 300, 300));
+        grilleJeu_graphique.add(cellule10);
 
         cellule11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cellule00ActionPerformed(evt);
+                cellule11ActionPerformed(evt);
             }
         });
         grilleJeu_graphique.add(cellule11);
@@ -111,9 +108,9 @@ public class FenetreDeJeu extends javax.swing.JFrame {
         jLabel2.setText("Infos Joueurs : ");
         infosjoueur.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 130, 20));
 
-        scorejoueur1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        scorejoueur1.setText("scorejoueur1");
-        infosjoueur.add(scorejoueur1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 80, 20));
+        scorejoueur.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        scorejoueur.setText("scorejoueur1");
+        infosjoueur.add(scorejoueur, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 80, 20));
 
         nomjoueur.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         nomjoueur.setText("nomjoueur");
@@ -158,7 +155,7 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     private void cellule00ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule00ActionPerformed
         if (CellulesJeu[0][0].EstAllume){ 
             Score++;
-            scorejoueur1.setText(""+Score);
+            scorejoueur.setText(""+Score);
             eteindreCellule(0,0);
             celluleGraphique[0][0].setBackground(Color.lightGray);
             allumerCelluleAleat();
@@ -169,7 +166,7 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     private void cellule10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule10ActionPerformed
         if (CellulesJeu[1][0].EstAllume){ 
             Score++;
-            scorejoueur1.setText(""+Score);
+            scorejoueur.setText(""+Score);
             eteindreCellule(1,0);
             celluleGraphique[1][0].setBackground(Color.lightGray);
             allumerCelluleAleat();
@@ -180,7 +177,7 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     private void cellule01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule01ActionPerformed
         if (CellulesJeu[0][1].EstAllume){ 
             Score++;
-            scorejoueur1.setText(""+Score);
+            scorejoueur.setText(""+Score);
             eteindreCellule(0,1);
             celluleGraphique[0][1].setBackground(Color.lightGray);
             allumerCelluleAleat();
@@ -191,7 +188,7 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     private void cellule11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11ActionPerformed
         if (CellulesJeu[1][1].EstAllume){ 
             Score++;
-            scorejoueur1.setText(""+Score);
+            scorejoueur.setText(""+Score);
             eteindreCellule(1,1);
             celluleGraphique[1][1].setBackground(Color.lightGray);
             allumerCelluleAleat();
@@ -202,6 +199,10 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void cellule11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule2ActionPerformed
+
+    }//GEN-LAST:event_cellule2ActionPerformed
 
 
     public static void main(String args[]) {
@@ -288,6 +289,6 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     private javax.swing.JLabel nomjoueur;
     private javax.swing.JPanel panneaumodepartie;
     private javax.swing.JLabel recordnomjoueur1;
-    private javax.swing.JLabel scorejoueur1;
+    private javax.swing.JLabel scorejoueur;
     // End of variables declaration//GEN-END:variables
 }

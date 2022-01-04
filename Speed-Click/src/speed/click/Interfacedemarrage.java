@@ -142,6 +142,9 @@ public class Interfacedemarrage extends javax.swing.JFrame {
         InterfacePartie2x2classique fenetreJeu2x2_classique = new InterfacePartie2x2classique();  
         fenetreJeu2x2_classique.setVisible(true);
         fenetreJeu2x2_classique.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        nomDuJoueur = entrezpeudo.getText();
+        fenetreJeu2x2_classique.PlayerName=nomDuJoueur;
+        fenetreJeu2x2_classique.AssimilationNom();
     }//GEN-LAST:event_btn_2x2_classique1ActionPerformed
 
     private void btn_4x4_classiqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_4x4_classiqueActionPerformed
