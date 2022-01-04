@@ -119,7 +119,7 @@ public class InterfacePartie4x4classique extends JFrame implements ActionListene
         panneaumodepartie.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTextField1.setText("Bienvenue dans la Partie 4x4 !");
+        jTextField1.setText("Bienvenue dans la Partie 4x4 classique !");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);

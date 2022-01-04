@@ -110,7 +110,7 @@ public class InterfacePartie2x2Infinie extends JFrame{
         panneaumodepartie.setBackground(new java.awt.Color(255, 153, 255));
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTextField1.setText("Bienvenue dans la Partie 2x2  classique !");
+        jTextField1.setText("Bienvenue dans la Partie 2x2  Infini !");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
