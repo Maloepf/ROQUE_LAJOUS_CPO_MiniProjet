@@ -478,10 +478,9 @@ public class InterfacePartie4x4infinie extends javax.swing.JFrame {
         });
     }
     
-       public void allumerCelluleAleat() {
-        allumerCellule(new Random().nextInt(2),new Random().nextInt(2)); 
+public void allumerCelluleAleat() {
+        allumerCellule(new Random().nextInt(4),new Random().nextInt(4)); 
     }
-    
     
     public void allumerCelluleAleat_graph(){
         for (int l =0; l<4; l++){
@@ -506,6 +505,7 @@ public class InterfacePartie4x4infinie extends javax.swing.JFrame {
         System.out.println(PlayerName);
         nomjoueur3.setText(PlayerName);
    }
+
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
