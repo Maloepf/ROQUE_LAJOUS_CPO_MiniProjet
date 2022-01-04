@@ -5,14 +5,14 @@ import javax.swing.JFrame;
 
 public class Interfacedemarrage extends javax.swing.JFrame {
 
-     String nomDuJoueur;
+     String nomDuJoueur; //atribut de mon interface de demarrage
 
     public Interfacedemarrage() {
         initComponents();
         
     }
     
-    public String getnomDuJoueur(){
+    public String getnomDuJoueur(){ //recupere le pseudo que le joueur a saisie 
         return nomDuJoueur;
     }
     
@@ -130,16 +130,18 @@ public class Interfacedemarrage extends javax.swing.JFrame {
     }//GEN-LAST:event_entrezpeudoActionPerformed
 
     private void btn_2x2_infiniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2x2_infiniActionPerformed
-        InterfacePartie2x2Infinie fenetreJeu2x2_infini = new InterfacePartie2x2Infinie();
+        InterfacePartie2x2Infinie fenetreJeu2x2_infini = new InterfacePartie2x2Infinie();//lien avec le bouton entre l'interface de demarrage
+        //et la fenêtre de jeu associée au mode que le joueur choisi
         fenetreJeu2x2_infini.setVisible(true);
-        fenetreJeu2x2_infini.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        fenetreJeu2x2_infini.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);//ferme que le fenêtre que le joueur a choisi et non celle de démarrage
         nomDuJoueur = entrezpeudo.getText();
         fenetreJeu2x2_infini.PlayerName=nomDuJoueur;
-        fenetreJeu2x2_infini.AssimilationNom();
+        fenetreJeu2x2_infini.AssimilationNom();//permet d'envoyer le pseudo que le joeur a rentré à la fenêtre qu'il a choisi 
+        
     }//GEN-LAST:event_btn_2x2_infiniActionPerformed
 
     private void btn_2x2_classique1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2x2_classique1ActionPerformed
-        InterfacePartie2x2classique fenetreJeu2x2_classique = new InterfacePartie2x2classique();  
+        InterfacePartie2x2classique fenetreJeu2x2_classique = new InterfacePartie2x2classique();  // creation d'une nouvelle fentre de jeu
         fenetreJeu2x2_classique.setVisible(true);
         fenetreJeu2x2_classique.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         nomDuJoueur = entrezpeudo.getText();
