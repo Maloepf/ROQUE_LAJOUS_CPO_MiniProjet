@@ -38,9 +38,9 @@ public class FenetreDeJeu extends javax.swing.JFrame {
         }
         
         celluleGraphique[0][0]=cellule00;
-        celluleGraphique[0][1]=cellule12;
-        celluleGraphique[1][0]=cellule21;
-        celluleGraphique[1][1]=cellule22;
+        celluleGraphique[0][1]=cellule01;
+        celluleGraphique[1][0]=cellule10;
+        celluleGraphique[1][1]=cellule11;
         
         allumerCelluleAleat();
         allumerCelluleAleat_graph();
@@ -52,9 +52,9 @@ public class FenetreDeJeu extends javax.swing.JFrame {
 
         grilleJeu_graphique = new javax.swing.JPanel();
         cellule00 = new javax.swing.JButton();
-        cellule12 = new javax.swing.JButton();
-        cellule21 = new javax.swing.JButton();
-        cellule22 = new javax.swing.JButton();
+        cellule01 = new javax.swing.JButton();
+        cellule10 = new javax.swing.JButton();
+        cellule11 = new javax.swing.JButton();
         infosjoueur = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         scorejoueur1 = new javax.swing.JLabel();
@@ -72,35 +72,35 @@ public class FenetreDeJeu extends javax.swing.JFrame {
 
         grilleJeu_graphique.setBackground(new java.awt.Color(204, 255, 255));
         grilleJeu_graphique.setPreferredSize(new java.awt.Dimension(520, 520));
-        grilleJeu_graphique.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        grilleJeu_graphique.setLayout(new java.awt.GridLayout(2, 2));
 
         cellule00.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cellule00ActionPerformed(evt);
             }
         });
-        grilleJeu_graphique.add(cellule00, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 300, 300));
+        grilleJeu_graphique.add(cellule00);
 
-        cellule12.addActionListener(new java.awt.event.ActionListener() {
+        cellule01.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cellule12ActionPerformed(evt);
+                cellule01ActionPerformed(evt);
             }
         });
-        grilleJeu_graphique.add(cellule12, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, 300, 300));
+        grilleJeu_graphique.add(cellule01);
 
-        cellule21.addActionListener(new java.awt.event.ActionListener() {
+        cellule10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cellule21ActionPerformed(evt);
+                cellule10ActionPerformed(evt);
             }
         });
-        grilleJeu_graphique.add(cellule21, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 300, 300));
+        grilleJeu_graphique.add(cellule10);
 
-        cellule22.addActionListener(new java.awt.event.ActionListener() {
+        cellule11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cellule22ActionPerformed(evt);
+                cellule00ActionPerformed(evt);
             }
         });
-        grilleJeu_graphique.add(cellule22, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 300, 300, 300));
+        grilleJeu_graphique.add(cellule11);
 
         getContentPane().add(grilleJeu_graphique, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 600, 600));
 
@@ -166,7 +166,7 @@ public class FenetreDeJeu extends javax.swing.JFrame {
         }          
     }//GEN-LAST:event_cellule00ActionPerformed
 
-    private void cellule21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule21ActionPerformed
+    private void cellule10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule10ActionPerformed
         if (CellulesJeu[1][0].EstAllume){ 
             Score++;
             scorejoueur1.setText(""+Score);
@@ -175,9 +175,9 @@ public class FenetreDeJeu extends javax.swing.JFrame {
             allumerCelluleAleat();
             allumerCelluleAleat_graph();
         }  
-    }//GEN-LAST:event_cellule21ActionPerformed
+    }//GEN-LAST:event_cellule10ActionPerformed
 
-    private void cellule12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12ActionPerformed
+    private void cellule01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule01ActionPerformed
         if (CellulesJeu[0][1].EstAllume){ 
             Score++;
             scorejoueur1.setText(""+Score);
@@ -186,9 +186,9 @@ public class FenetreDeJeu extends javax.swing.JFrame {
             allumerCelluleAleat();
             allumerCelluleAleat_graph();
         }  
-    }//GEN-LAST:event_cellule12ActionPerformed
+    }//GEN-LAST:event_cellule01ActionPerformed
 
-    private void cellule22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule22ActionPerformed
+    private void cellule11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11ActionPerformed
         if (CellulesJeu[1][1].EstAllume){ 
             Score++;
             scorejoueur1.setText(""+Score);
@@ -197,7 +197,7 @@ public class FenetreDeJeu extends javax.swing.JFrame {
             allumerCelluleAleat();
             allumerCelluleAleat_graph();
         } 
-    }//GEN-LAST:event_cellule22ActionPerformed
+    }//GEN-LAST:event_cellule11ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
@@ -276,9 +276,9 @@ public class FenetreDeJeu extends javax.swing.JFrame {
     private javax.swing.JLabel Nom;
     private javax.swing.JLabel Record;
     private javax.swing.JButton cellule00;
-    private javax.swing.JButton cellule12;
-    private javax.swing.JButton cellule21;
-    private javax.swing.JButton cellule22;
+    private javax.swing.JButton cellule01;
+    private javax.swing.JButton cellule10;
+    private javax.swing.JButton cellule11;
     private javax.swing.JPanel grilleJeu_graphique;
     private javax.swing.JPanel infosjoueur;
     private javax.swing.JLabel jLabel2;

@@ -39,10 +39,10 @@ public class InterfacePartie2x2classique extends javax.swing.JFrame {
         }
         
         
-        celluleGraphique[0][0]=cellule11;
-        celluleGraphique[0][1]=cellule12;
-        celluleGraphique[1][0]=cellule21;
-        celluleGraphique[1][1]=cellule22;
+        celluleGraphique[0][0]=cellule00;
+        celluleGraphique[0][1]=cellule01;
+        celluleGraphique[1][0]=cellule10;
+        celluleGraphique[1][1]=cellule11;
         
 
     }
@@ -71,13 +71,13 @@ public class InterfacePartie2x2classique extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        grilleJeu_graphique2 = new javax.swing.JPanel();
-        cellule11 = new javax.swing.JButton();
-        cellule12 = new javax.swing.JButton();
-        cellule21 = new javax.swing.JButton();
-        cellule22 = new javax.swing.JButton();
         panneaumodepartie = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
+        grilleJeu_graphique = new javax.swing.JPanel();
+        cellule00 = new javax.swing.JButton();
+        cellule01 = new javax.swing.JButton();
+        cellule10 = new javax.swing.JButton();
+        cellule11 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -137,40 +137,6 @@ public class InterfacePartie2x2classique extends javax.swing.JFrame {
 
         getContentPane().add(infosjoueur2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 320, 310, 250));
 
-        grilleJeu_graphique2.setBackground(new java.awt.Color(204, 255, 255));
-        grilleJeu_graphique2.setPreferredSize(new java.awt.Dimension(520, 520));
-        grilleJeu_graphique2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        cellule11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cellule11ActionPerformed(evt);
-            }
-        });
-        grilleJeu_graphique2.add(cellule11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 300, 300));
-
-        cellule12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cellule12ActionPerformed(evt);
-            }
-        });
-        grilleJeu_graphique2.add(cellule12, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, 300, 300));
-
-        cellule21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cellule21ActionPerformed(evt);
-            }
-        });
-        grilleJeu_graphique2.add(cellule21, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 300, 300));
-
-        cellule22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cellule22ActionPerformed(evt);
-            }
-        });
-        grilleJeu_graphique2.add(cellule22, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 300, 300, 300));
-
-        getContentPane().add(grilleJeu_graphique2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 600, 600));
-
         panneaumodepartie.setBackground(new java.awt.Color(255, 153, 255));
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -200,6 +166,40 @@ public class InterfacePartie2x2classique extends javax.swing.JFrame {
 
         getContentPane().add(panneaumodepartie, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 40, 380, -1));
 
+        grilleJeu_graphique.setBackground(new java.awt.Color(204, 255, 255));
+        grilleJeu_graphique.setPreferredSize(new java.awt.Dimension(520, 520));
+        grilleJeu_graphique.setLayout(new java.awt.GridLayout(2, 2));
+
+        cellule00.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule00ActionPerformed(evt);
+            }
+        });
+        grilleJeu_graphique.add(cellule00);
+
+        cellule01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule01ActionPerformed(evt);
+            }
+        });
+        grilleJeu_graphique.add(cellule01);
+
+        cellule10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule10ActionPerformed(evt);
+            }
+        });
+        grilleJeu_graphique.add(cellule10);
+
+        cellule11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cellule11ActionPerformed(evt);
+            }
+        });
+        grilleJeu_graphique.add(cellule11);
+
+        getContentPane().add(grilleJeu_graphique, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 600, 600));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -207,33 +207,45 @@ public class InterfacePartie2x2classique extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_STARTActionPerformed
 
-    private void cellule11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11ActionPerformed
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void cellule00ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule00ActionPerformed
         if (CellulesJeu[0][0].EstAllume){
             eteindreCellule(0,0);
             celluleGraphique[0][0].setBackground(Color.lightGray);
             allumerCelluleAleat();
             allumerCelluleAleat_graph();
         }
+    }//GEN-LAST:event_cellule00ActionPerformed
+
+    private void cellule01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule01ActionPerformed
+        if (CellulesJeu[0][1].EstAllume){
+            eteindreCellule(0,1);
+            celluleGraphique[0][1].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+        }
+    }//GEN-LAST:event_cellule01ActionPerformed
+
+    private void cellule10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule10ActionPerformed
+        if (CellulesJeu[1][0].EstAllume){
+            eteindreCellule(1,0);
+            celluleGraphique[1][0].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+        }
+    }//GEN-LAST:event_cellule10ActionPerformed
+
+    private void cellule11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule11ActionPerformed
+        if (CellulesJeu[1][1].EstAllume){
+            eteindreCellule(1,1);
+            celluleGraphique[1][1].setBackground(Color.lightGray);
+            allumerCelluleAleat();
+            allumerCelluleAleat_graph();
+        }
     }//GEN-LAST:event_cellule11ActionPerformed
-
-    private void cellule12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule12ActionPerformed
-        allumerCelluleAleat() ;
-        allumerCelluleAleat_graph();
-    }//GEN-LAST:event_cellule12ActionPerformed
-
-    private void cellule21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule21ActionPerformed
-        allumerCelluleAleat() ;
-        allumerCelluleAleat_graph();
-    }//GEN-LAST:event_cellule21ActionPerformed
-
-    private void cellule22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cellule22ActionPerformed
-        allumerCelluleAleat() ;
-        allumerCelluleAleat_graph();
-    }//GEN-LAST:event_cellule22ActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -297,13 +309,13 @@ public class InterfacePartie2x2classique extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton START;
+    private javax.swing.JButton cellule00;
+    private javax.swing.JButton cellule01;
+    private javax.swing.JButton cellule10;
     private javax.swing.JButton cellule11;
-    private javax.swing.JButton cellule12;
-    private javax.swing.JButton cellule21;
-    private javax.swing.JButton cellule22;
     private javax.swing.JPanel chronometre1;
     private javax.swing.JPanel chronometre2;
-    private javax.swing.JPanel grilleJeu_graphique2;
+    private javax.swing.JPanel grilleJeu_graphique;
     private javax.swing.JPanel infosjoueur2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
