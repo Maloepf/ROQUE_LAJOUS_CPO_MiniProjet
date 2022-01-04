@@ -7,20 +7,31 @@
 package speed.click;
 
 import java.awt.Color;
+import java.awt.event.ActionListener;
 import java.util.Random;
 import javax.swing.JButton;
+import javax.swing.*;
+import java.awt.event.*;
 
-public class InterfacePartie2x2classique extends javax.swing.JFrame {
+public class InterfacePartie2x2classique extends JFrame implements ActionListener{
 
     Cellule [][] CellulesJeu;
     Grille grilleJeu;
-    Joueur Player;
     String PlayerName;
+    Joueur Player;
     int Score;
+    int TempsDeJeu;
     JButton [][] celluleGraphique=new JButton [2][2];
+    
+    protected JLabel viewTime;  // composant permettant l'affichage du temps ecoule
+    protected int timeCount;	// variable permettant de memoriser le temps ecoule
+    protected Timer timer;	
     
     public InterfacePartie2x2classique() {
         initComponents();
+        
+        TempsDeJeu=1;
+        Chrono.setText(""+TempsDeJeu);
         
         Score = 0;
         scorejoueur.setText(""+Score);
@@ -41,7 +52,12 @@ public class InterfacePartie2x2classique extends javax.swing.JFrame {
         
         allumerCelluleAleat();
         allumerCelluleAleat_graph();
+        
+        this.timeCount = TempsDeJeu;
+	this.viewTime = Chrono;
+	this.timer = new Timer (1000, this);
     }
+
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -199,6 +215,7 @@ public class InterfacePartie2x2classique extends javax.swing.JFrame {
             celluleGraphique[0][0].setBackground(Color.lightGray);
             allumerCelluleAleat();
             allumerCelluleAleat_graph();
+            startDTimer ();
         }
     }//GEN-LAST:event_cellule00ActionPerformed
 
@@ -210,6 +227,7 @@ public class InterfacePartie2x2classique extends javax.swing.JFrame {
             celluleGraphique[0][1].setBackground(Color.lightGray);
             allumerCelluleAleat();
             allumerCelluleAleat_graph();
+            startDTimer ();
         }
     }//GEN-LAST:event_cellule01ActionPerformed
 
@@ -221,6 +239,7 @@ public class InterfacePartie2x2classique extends javax.swing.JFrame {
             celluleGraphique[1][0].setBackground(Color.lightGray);
             allumerCelluleAleat();
             allumerCelluleAleat_graph();
+            startDTimer ();
         }
     }//GEN-LAST:event_cellule10ActionPerformed
 
@@ -232,6 +251,7 @@ public class InterfacePartie2x2classique extends javax.swing.JFrame {
             celluleGraphique[1][1].setBackground(Color.lightGray);
             allumerCelluleAleat();
             allumerCelluleAleat_graph();
+            startDTimer ();
         }
     }//GEN-LAST:event_cellule11ActionPerformed
 
@@ -296,7 +316,60 @@ public class InterfacePartie2x2classique extends javax.swing.JFrame {
         System.out.println(PlayerName);
         nomjoueur.setText(PlayerName);
    }
-    
+	
+	// lance le compteur de temps 
+	public void startDTimer ()
+	{	this.timer.start ();
+	}
+	
+	// stop le compteur de temps 
+	public void stopDTimer ()
+	{	this.timer.stop ();
+	}
+	
+	// permet de recuperer le temps deja ecoule
+	public int getTime ()
+	{	return ( this.timeCount );
+	}
+	
+	// permet de connaitre l'etat d'activite du timer (lance ou non)
+	public boolean isRunning ()
+	{	return ( this.timer.isRunning () );
+	}
+	
+	/****
+	    * Methode de l'interface ActionListener : 
+	    *        necessaire pour l'object javax.swing.Timer
+	    *        methode appelle a intervalle de temps regulier par le timer
+	    *        (utilise egalement par le bouton pour stopper et lancer le timer
+	    *         la difference ce fait via l'instruction getActionCommand)
+	    *
+	    ****/
+	public void actionPerformed (ActionEvent e)
+	{	// Cas d'un evenement genere par le bouton
+		if ( "Bouton".equals (e.getActionCommand ()) )
+		{	// le timer est en court d'execution donc on l'arrete
+			if ( this.isRunning () )
+			{	this.stopDTimer ();
+			}
+			else // le timer est arrete donc on le lance ou relance
+			{	this.startDTimer ();
+			}
+		}
+                else // Cas d'un evenement genere par le composant javax.swing.Timer
+		{	this.timeCount--;
+			this.viewTime.setText (""+this.timeCount);
+		}
+                if (this.timeCount==0){
+                    this.stopDTimer ();
+                    for (int l =0; l<2; l++){
+                        for (int c = 0; c<2; c++){
+                            celluleGraphique[c][l].setVisible(false);
+                        }
+                    }
+                }
+                
+	}
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -322,3 +395,4 @@ public class InterfacePartie2x2classique extends javax.swing.JFrame {
     private javax.swing.JLabel scorejoueur;
     // End of variables declaration//GEN-END:variables
 }
+
